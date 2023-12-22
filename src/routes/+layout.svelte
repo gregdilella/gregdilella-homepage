@@ -35,28 +35,32 @@
 <AppShell>
 	<svelte:fragment slot="sidebarLeft">
 		<RadioGroup class="fixed left-6 top-1/2 -translate-y-1/2" flexDirection="flex-col" gap="gap-2">
-			<RadioItem
-				bind:group={value}
-				name="home"
-				value={0}
-				class="rounded-full aspect-square flex justify-center text-xl"
-				><a class="m-auto flex gap-1 group" href="/"
-					><i class="fa-solid fa-house"></i>
-				</a></RadioItem
+			<a href="/" class="flex justify-center">
+				<RadioItem
+					bind:group={value}
+					name="home"
+					value={0}
+					class="rounded-full aspect-square text-xl my-auto flex justify-center"
+					><i class="fa-solid fa-house m-auto"></i>
+				</RadioItem></a
 			>
-			<RadioItem
-				bind:group={value}
-				name="work"
-				value={1}
-				class="rounded-full aspect-square flex justify-center text-xl"
-				><a class="m-auto" href="/work"><i class="fa-solid fa-suitcase"></i></a></RadioItem
+			<a href="/work" class="flex justify-center">
+				<RadioItem
+					bind:group={value}
+					name="work"
+					value={1}
+					class="rounded-full aspect-square text-xl my-auto flex justify-center"
+					><i class="fa-solid fa-suitcase m-auto"></i></RadioItem
+				></a
 			>
-			<RadioItem
-				bind:group={value}
-				name="contact"
-				value={2}
-				class="rounded-full aspect-square flex justify-center text-xl"
-				><a class="m-auto" href="/contact"><i class="fa-solid fa-address-book"></i></a></RadioItem
+			<a href="/contact" class="flex justify-center">
+				<RadioItem
+					bind:group={value}
+					name="contact"
+					value={2}
+					class="rounded-full aspect-square text-xl my-auto flex justify-center"
+					><i class="fa-solid fa-address-book m-auto"></i></RadioItem
+				></a
 			>
 		</RadioGroup>
 	</svelte:fragment>
