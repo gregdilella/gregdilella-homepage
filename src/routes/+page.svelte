@@ -14,7 +14,7 @@
 	const popupMac: PopupSettings = {
 		event: 'hover',
 		target: 'popupMac',
-		placement: 'bottom'
+		placement: 'top'
 	};
 	onMount(() => {
 		const canvas = document.getElementById('canvas3d');
@@ -48,8 +48,8 @@
 </div>
 <div class="grid grid-cols-2" id="about">
 	<div>
-		<p data-popup="popupMac" class="text-sm font-semibold">press space</p>
 		<canvas use:popup={popupMac} class="" id="canvas3d"></canvas>
+		<p data-popup="popupMac" class="text-sm font-semibold">hit space</p>
 	</div>
 	<div class="flex justify-center items-center">
 		<div>
