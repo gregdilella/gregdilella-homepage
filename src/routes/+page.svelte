@@ -66,7 +66,8 @@
 		</div>
 	</div>
 </div>
-<div id="information" class="w-[80%] mx-auto grid grid-cols-3 grid-row-3 gap-8">
+
+<div id="information" class="w-[80%] mx-auto grid grid-cols-3 grid-row-3 gap-8 mb-4">
 	<div class="bento-box flex justify-center">
 		<div class="my-auto">
 			<p
@@ -108,16 +109,29 @@
 		</div>
 	</div>
 	<div class="bento-box row-span-2 flex flex-col">
-		<i class="fa-regular fa-star text-left text-7xl mb-4"></i>
-		<div class="text-left mx-auto">
-			<p class="bento-heading text-5xl">Things I am proud of</p>
-			<ul class="disc-list text-lg">
+		<div class="text-left m-auto">
+			<p
+				class="bento-heading text-6xl bg-gradient-to-bl from-primary-700 to-secondary-300 bg-clip-text text-transparent"
+			>
+				Why me?
+			</p>
+			<ul class="disc-list text-xl font-bold">
 				<li>Beautifully crafted Websites</li>
+				<li>Modern Design</li>
 				<li>Keen eye on detail</li>
 				<li>Fast response times</li>
-				<li></li>
 			</ul>
 		</div>
 	</div>
-	<div class="bento-box col-span-2">e</div>
+	<div class="bento-box col-span-2 flex">
+		<div class="text-left mx-auto flex flex-col">
+			<i
+				class="fa-solid fa-quote-left text-left text-3xl mx-auto bg-gradient-to-bl from-primary-700 to-secondary-300 bg-clip-text text-transparent"
+			></i>
+			<p class="text-left text-2xl font-semibold italic">
+				Design is not just what it looks like and feels like. Design is how it works. <br />
+				<span class="font-normal">- Steve Jobs</span>
+			</p>
+		</div>
+	</div>
 </div>
