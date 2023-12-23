@@ -65,4 +65,20 @@
 		</RadioGroup>
 	</svelte:fragment>
 	<slot />
+	<svelte:fragment slot="footer">
+		<footer class="text-center p-8 md:w-[50%] mx-auto">
+			<h1>©Neville Brem 2024</h1>
+			<div class="flex gap-2 justify-center">
+				<a class="btn" href="https://github.com/nevthereal" target="_blank"
+					><i class="fa-brands fa-github text-2xl"></i></a
+				>
+				<a class="btn" href="https://twitter.com/bremneville" target="_blank"
+					><i class="fa-brands fa-x-twitter text-2xl"></i></a
+				>
+				<a class="btn" href="mailto:contact@nevillebrem.com"
+					><i class="fa-regular fa-envelope text-2xl"></i></a
+				>
+			</div>
+		</footer>
+	</svelte:fragment>
 </AppShell>

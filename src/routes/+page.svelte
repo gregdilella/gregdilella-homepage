@@ -67,7 +67,7 @@
 	</div>
 </div>
 
-<div id="information" class="w-[80%] mx-auto grid grid-cols-3 grid-row-3 gap-8 mb-4">
+<div id="information" class="w-[80%] mx-auto grid grid-cols-3 grid-row-4 gap-8 mb-4">
 	<div class="bento-box flex justify-center">
 		<div class="my-auto">
 			<p
@@ -130,8 +130,12 @@
 			></i>
 			<p class="text-left text-2xl font-semibold italic">
 				Design is not just what it looks like and feels like. Design is how it works. <br />
-				<span class="font-normal">- Steve Jobs</span>
+				<span class="font-normal text-lg">- Steve Jobs</span>
 			</p>
 		</div>
+	</div>
+	<div class="col-span-3 grid grid-cols-2 gap-8">
+		<div class="bento-box">asd</div>
+		<div class="bento-box">asd</div>
 	</div>
 </div>
