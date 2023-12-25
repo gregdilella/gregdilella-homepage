@@ -43,7 +43,7 @@
 	</div>
 </div>
 <!-- About -->
-<div class="grid grid-cols-2 my-8" id="about">
+<div class="grid grid-cols-2 my-8 w-[80%] mx-auto" id="about">
 	<div class="flex justify-center items-center">
 		<div class="max-w-[75%]">
 			<h1 class="h1">About me</h1>
