@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Skills from '$lib/skills.svelte';
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
 
 	import { Application } from '@splinetool/runtime';
@@ -11,16 +12,11 @@
 		target: 'popupExplore',
 		placement: 'bottom'
 	};
-	const popupMac: PopupSettings = {
-		event: 'hover',
-		target: 'popupMac',
-		placement: 'top'
-	};
-	onMount(() => {
-		const canvas = document.getElementById('canvas3d');
-		const app = new Application(canvas);
-		app.load('https://prod.spline.design/H-wZEaPskiwj5NSS/scene.splinecode');
-	});
+	// onMount(() => {
+	// 	const canvas = document.getElementById('canvas3d');
+	// 	const app = new Application(canvas);
+	// 	app.load('');
+	// });
 </script>
 
 <div class="flex w-screen h-screen justify-center">
@@ -40,17 +36,14 @@
 		</h3>
 		<a
 			href="#about"
-			class="font-bold btn bg-primary-500 mx-auto mt-6 text-xl p-4 border-b-4 border-white hover:border-primary-500 hover:border-b-0 hover:border-t-4 hover:text-primary-500 hover:bg-white duration-300 ease-in-out active:border-none"
+			class="font-bold btn bg-primary-500 mx-auto mt-6 text-xl p-4 border-b-4 border-white hover:border-primary-500 hover:border-b-0 hover:border-t-4 hover:text-primary-500 hover:bg-white duration-200 ease-in-out active:border-none"
 			use:popup={popupExplore}>Explore</a
 		>
 		<p data-popup="popupExplore" class="text-sm font-semibold">curious?</p>
 	</div>
 </div>
-<div class="grid grid-cols-2" id="about">
-	<div>
-		<canvas use:popup={popupMac} class="" id="canvas3d"></canvas>
-		<p data-popup="popupMac" class="text-sm font-semibold">hit space</p>
-	</div>
+<!-- About -->
+<div class="grid grid-cols-2 my-8" id="about">
 	<div class="flex justify-center items-center">
 		<div class="max-w-[75%]">
 			<h1 class="h1">About me</h1>
@@ -66,7 +59,7 @@
 		</div>
 	</div>
 </div>
-
+<!-- Information -->
 <div id="information" class="w-[80%] mx-auto grid grid-cols-3 grid-row-4 gap-8 mb-4">
 	<div class="bento-box flex justify-center">
 		<div class="my-auto">
@@ -110,17 +103,7 @@
 	</div>
 	<div class="bento-box row-span-2 flex flex-col">
 		<div class="text-left m-auto">
-			<p
-				class="bento-heading text-6xl bg-gradient-to-bl from-primary-700 to-secondary-300 bg-clip-text text-transparent"
-			>
-				Why me?
-			</p>
-			<ul class="disc-list text-xl font-bold">
-				<li>Beautifully crafted Websites</li>
-				<li>Modern Design</li>
-				<li>Keen eye on detail</li>
-				<li>Fast response times</li>
-			</ul>
+			<Skills />
 		</div>
 	</div>
 	<div class="bento-box col-span-2 flex">
@@ -135,7 +118,29 @@
 		</div>
 	</div>
 	<div class="col-span-3 grid grid-cols-2 gap-8">
-		<div class="bento-box">asd</div>
-		<div class="bento-box">asd</div>
+		<div class="bento-box">
+			<p
+				class="bento-heading text-4xl bg-gradient-to-bl from-primary-500 to-tertiary-500 bg-clip-text text-transparent"
+			>
+				Interactivity
+			</p>
+			<p>
+				Creates a feeling of <span class="group font-bold"
+					>connection <a href="https://instagram.com/nevillebrem" class="hidden group-hover:inline"
+						><i class="fa-solid fa-link"></i></a
+					></span
+				> to the site.
+			</p>
+		</div>
+		<div class="bento-box">
+			<p
+				class="bento-heading text-7xl bg-gradient-to-tr from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+			>
+				3D
+			</p>
+			<p>
+				<span class="font-bold">Immerse</span> users into your world.
+			</p>
+		</div>
 	</div>
 </div>
