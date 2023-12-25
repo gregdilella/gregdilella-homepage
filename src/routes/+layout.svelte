@@ -4,7 +4,14 @@
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
 	import 'highlight.js/styles/github-dark.css';
-	import { AppShell, RadioGroup, RadioItem, storeHighlightJs } from '@skeletonlabs/skeleton';
+	import {
+		AppShell,
+		RadioGroup,
+		RadioItem,
+		storeHighlightJs,
+		popup,
+		type PopupSettings
+	} from '@skeletonlabs/skeleton';
 	import xml from 'highlight.js/lib/languages/xml'; // for HTML
 	import css from 'highlight.js/lib/languages/css';
 	import javascript from 'highlight.js/lib/languages/javascript';
@@ -30,12 +37,28 @@
 	} else if ($page.url.pathname === '/contact') {
 		value = 2;
 	}
+
+	const homePopup: PopupSettings = {
+		event: 'hover',
+		placement: 'right',
+		target: 'homePopup'
+	};
+	const workPopup: PopupSettings = {
+		event: 'hover',
+		placement: 'right',
+		target: 'workPopup'
+	};
+	const contactPopup: PopupSettings = {
+		event: 'hover',
+		placement: 'right',
+		target: 'contactPopup'
+	};
 </script>
 
 <AppShell>
 	<svelte:fragment slot="sidebarLeft">
 		<RadioGroup class="fixed left-6 top-1/2 -translate-y-1/2" flexDirection="flex-col" gap="gap-2">
-			<a href="/" class="flex justify-center">
+			<a href="/" class="flex justify-center" use:popup={homePopup}>
 				<RadioItem
 					bind:group={value}
 					name="home"
@@ -44,7 +67,7 @@
 					><i class="fa-solid fa-house m-auto"></i>
 				</RadioItem></a
 			>
-			<a href="/work" class="flex justify-center">
+			<a href="/work" class="flex justify-center" use:popup={workPopup}>
 				<RadioItem
 					bind:group={value}
 					name="work"
@@ -53,7 +76,7 @@
 					><i class="fa-solid fa-suitcase m-auto"></i></RadioItem
 				></a
 			>
-			<a href="/contact" class="flex justify-center">
+			<a href="/contact" class="flex justify-center" use:popup={contactPopup}>
 				<RadioItem
 					bind:group={value}
 					name="contact"
@@ -63,6 +86,9 @@
 				></a
 			>
 		</RadioGroup>
+		<p data-popup="homePopup" class="popup">Home</p>
+		<p data-popup="workPopup" class="popup">Work</p>
+		<p data-popup="contactPopup" class="popup">Contact</p>
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="footer">
