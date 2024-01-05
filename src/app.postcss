@@ -3,12 +3,21 @@
 @tailwind utilities;
 @tailwind variants;
 
+@font-face {
+	font-family: 'Geist';
+	src: url('/fonts/Geist.ttf');
+}
+
+:root [data-theme='portfolio'] {
+	--theme-font-family-heading: 'Geist', sans-serif;
+}
+
 html {
 	@apply scroll-smooth;
 }
 
 .bento-box {
-	@apply card variant-ghost-surface p-8 hover:shadow-lg duration-200 text-center rounded-2xl;
+	@apply card variant-ghost-surface p-8 hover:shadow-lg duration-200 text-center rounded-container-token;
 }
 
 .bento-heading {
