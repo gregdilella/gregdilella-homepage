@@ -87,15 +87,15 @@ export const portfolio: CustomThemeConfig = {
 		'--color-error-800': '142 67 67', // #8e4343
 		'--color-error-900': '116 54 54', // #743636
 		// surface | #404040
-		'--color-surface-50': '226 226 226', // #e2e2e2
-		'--color-surface-100': '217 217 217', // #d9d9d9
-		'--color-surface-200': '207 207 207', // #cfcfcf
-		'--color-surface-300': '179 179 179', // #b3b3b3
-		'--color-surface-400': '121 121 121', // #797979
-		'--color-surface-500': '64 64 64', // #404040
-		'--color-surface-600': '58 58 58', // #3a3a3a
-		'--color-surface-700': '48 48 48', // #303030
-		'--color-surface-800': '38 38 38', // #262626
-		'--color-surface-900': '31 31 31' // #1f1f1f
+		'--color-surface-50': '224 224 224', // #e0e0e0
+		'--color-surface-100': '214 214 214', // #d6d6d6
+		'--color-surface-200': '204 204 204', // #cccccc
+		'--color-surface-300': '173 173 173', // #adadad
+		'--color-surface-400': '112 112 112', // #707070
+		'--color-surface-500': '51 51 51', // #333333
+		'--color-surface-600': '46 46 46', // #2e2e2e
+		'--color-surface-700': '38 38 38', // #262626
+		'--color-surface-800': '31 31 31', // #1f1f1f
+		'--color-surface-900': '25 25 25' // #191919
 	}
 };
