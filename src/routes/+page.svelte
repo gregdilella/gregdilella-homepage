@@ -17,7 +17,7 @@
 		</div>
 		<h3 class="mx-auto italic h3 pt-4 font-semibold">
 			Bringing <span
-				class="font-black text-primary-500 hover:tracking-widest duration-200 ease-in-out"
+				class="font-extrabold text-primary-500 hover:tracking-widest duration-200 ease-in-out"
 				>life</span
 			> to every page
 		</h3>
