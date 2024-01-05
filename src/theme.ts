@@ -1,7 +1,7 @@
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
 
-export const portfolio: CustomThemeConfig = {
-	name: 'portfolio',
+export const abyss: CustomThemeConfig = {
+	name: 'abyss',
 	properties: {
 		// =~= Theme Properties =~=
 		'--theme-font-family-base': `system-ui`,
@@ -86,16 +86,16 @@ export const portfolio: CustomThemeConfig = {
 		'--color-error-700': '177 83 83', // #b15353
 		'--color-error-800': '142 67 67', // #8e4343
 		'--color-error-900': '116 54 54', // #743636
-		// surface | #404040
-		'--color-surface-50': '224 224 224', // #e0e0e0
-		'--color-surface-100': '214 214 214', // #d6d6d6
-		'--color-surface-200': '204 204 204', // #cccccc
-		'--color-surface-300': '173 173 173', // #adadad
-		'--color-surface-400': '112 112 112', // #707070
-		'--color-surface-500': '51 51 51', // #333333
-		'--color-surface-600': '46 46 46', // #2e2e2e
-		'--color-surface-700': '38 38 38', // #262626
-		'--color-surface-800': '31 31 31', // #1f1f1f
-		'--color-surface-900': '25 25 25' // #191919
+		// surface | #1E1E1E
+		'--color-surface-50': '221 221 221', // #dddddd
+		'--color-surface-100': '210 210 210', // #d2d2d2
+		'--color-surface-200': '199 199 199', // #c7c7c7
+		'--color-surface-300': '165 165 165', // #a5a5a5
+		'--color-surface-400': '98 98 98', // #626262
+		'--color-surface-500': '30 30 30', // #1E1E1E
+		'--color-surface-600': '27 27 27', // #1b1b1b
+		'--color-surface-700': '23 23 23', // #171717
+		'--color-surface-800': '18 18 18', // #121212
+		'--color-surface-900': '15 15 15' // #0f0f0f
 	}
 };
