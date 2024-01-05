@@ -1,29 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
-
-	// Highlight JS
-	import hljs from 'highlight.js/lib/core';
-	import 'highlight.js/styles/github-dark.css';
-	import {
-		AppShell,
-		RadioGroup,
-		RadioItem,
-		storeHighlightJs,
-		popup,
-		type PopupSettings
-	} from '@skeletonlabs/skeleton';
-	import xml from 'highlight.js/lib/languages/xml'; // for HTML
-	import typescript from 'highlight.js/lib/languages/typescript';
-
-	hljs.registerLanguage('xml', xml); // for HTML
-	hljs.registerLanguage('typescript', typescript);
-	storeHighlightJs.set(hljs);
-
-	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
+	import { AppShell, RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	let value: number = 0;
 	$: if ($page.url.pathname === '/') {
