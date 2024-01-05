@@ -33,28 +33,12 @@
 	} else if ($page.url.pathname === '/contact') {
 		value = 2;
 	}
-
-	const homePopup: PopupSettings = {
-		event: 'hover',
-		placement: 'right',
-		target: 'homePopup'
-	};
-	const workPopup: PopupSettings = {
-		event: 'hover',
-		placement: 'right',
-		target: 'workPopup'
-	};
-	const contactPopup: PopupSettings = {
-		event: 'hover',
-		placement: 'right',
-		target: 'contactPopup'
-	};
 </script>
 
 <AppShell>
 	<svelte:fragment slot="sidebarLeft">
 		<RadioGroup class="fixed left-6 top-1/2 -translate-y-1/2" flexDirection="flex-col" gap="gap-2">
-			<a href="/" class="flex justify-center" use:popup={homePopup}>
+			<a href="/" class="flex justify-center">
 				<RadioItem
 					bind:group={value}
 					name="home"
@@ -63,7 +47,7 @@
 					><i class="fa-solid fa-house m-auto"></i>
 				</RadioItem></a
 			>
-			<a href="/work" class="flex justify-center" use:popup={workPopup}>
+			<a href="/work" class="flex justify-center">
 				<RadioItem
 					bind:group={value}
 					name="work"
@@ -72,19 +56,16 @@
 					><i class="fa-solid fa-suitcase m-auto"></i></RadioItem
 				></a
 			>
-			<a href="/contact" class="flex justify-center" use:popup={contactPopup}>
+			<a href="/contact" class="flex justify-center">
 				<RadioItem
 					bind:group={value}
 					name="contact"
 					value={2}
-					class="rounded-full aspect-square text-xl my-auto flex justify-center"
-					><i class="fa-solid fa-address-book m-auto"></i></RadioItem
-				></a
-			>
+					class="rounded-full aspect-square text-xl my-auto flex justify-center group"
+					><i class="fa-solid fa-address-book m-auto"></i>
+				</RadioItem>
+			</a>
 		</RadioGroup>
-		<p data-popup="homePopup" class="popup">Home</p>
-		<p data-popup="workPopup" class="popup">Work</p>
-		<p data-popup="contactPopup" class="popup">Contact</p>
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="footer">
