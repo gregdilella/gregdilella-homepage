@@ -5,7 +5,7 @@ export const abyss: CustomThemeConfig = {
 	properties: {
 		// =~= Theme Properties =~=
 		'--theme-font-family-base': `system-ui`,
-		'--theme-font-family-heading': `system-ui`,
+		'--theme-font-family-heading': `Geist`,
 		'--theme-font-color-base': '0 0 0',
 		'--theme-font-color-dark': '255 255 255',
 		'--theme-rounded-base': '6px',

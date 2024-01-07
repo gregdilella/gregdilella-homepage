@@ -7,17 +7,17 @@
 	<meta name="description" content="The Homepage of Neville Brem" />
 </svelte:head>
 
-<div class="flex w-screen h-screen justify-center">
+<div class="flex h-screen justify-center">
 	<div class="flex justify-center flex-col">
 		<div class="relative group mx-auto">
 			<div
 				class="absolute inset-0 bg-primary-500 blur-2xl rounded-full opacity-50 group-hover:opacity-75 ease-in-out duration-500"
 			></div>
-			<h1 class="mx-auto text-8xl font-black relative">Neville Brem</h1>
+			<h1 class="mx-auto text-8xl font-black relative font-heading-token">Neville Brem</h1>
 		</div>
 		<h3 class="mx-auto italic h3 pt-4 font-semibold">
 			Bringing <span
-				class="font-extrabold text-primary-500 hover:tracking-widest duration-200 ease-in-out"
+				class="font-extrabold text-primary-500 hover:tracking-widest duration-200 ease-in-out hover:text-green-500"
 				>life</span
 			> to every page
 		</h3>
@@ -52,7 +52,12 @@
 			</p>
 		</div>
 	</div>
-	<img src={me} alt="me:)" class="w-1/2 m-auto card" />
+	<span
+		class="before:block before:absolute before:-inset-1 before:bg-pink-500 before:translate-x-4 before:translate-y-4 relative inline-block before:w-1/2 before:m-auto before:card before:variant-ringed-primary"
+	>
+		<img src={me} alt="me:)" class="w-1/2 m-auto card relative" />
+		<span> </span></span
+	>
 </div>
 
 <!-- Information -->
@@ -60,7 +65,7 @@
 	<div class="bento-box flex justify-center">
 		<div class="my-auto">
 			<h1
-				class="bento-heading text-6xl bg-gradient-to-bl from-primary-700 to-secondary-300 bg-clip-text text-transparent"
+				class="bento-heading text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
 			>
 				3 Years
 			</h1>
@@ -69,7 +74,7 @@
 	</div>
 	<div class="bento-box col-span-2">
 		<h1
-			class="bento-heading bg-gradient-to-bl from-primary-700 to-secondary-300 bg-clip-text text-transparent text-8xl"
+			class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent text-8xl"
 		>
 			500+
 		</h1>
@@ -101,7 +106,7 @@
 	<div class="bento-box row-span-2 flex flex-col">
 		<div class="text-left m-auto">
 			<h1
-				class="bento-heading text-6xl bg-gradient-to-bl from-primary-700 to-secondary-300 bg-clip-text text-transparent"
+				class="bento-heading text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
 			>
 				Why me?
 			</h1>
@@ -116,7 +121,7 @@
 	<div class="bento-box col-span-2 flex">
 		<div class="text-left mx-auto flex flex-col">
 			<i
-				class="fa-solid fa-quote-left text-left text-3xl mx-auto bg-gradient-to-bl from-primary-700 to-secondary-300 bg-clip-text text-transparent"
+				class="fa-solid fa-quote-left text-left text-3xl mx-auto bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
 			></i>
 			<p class="text-left text-2xl font-semibold italic">
 				Design is not just what it looks like and feels like. Design is how it works. <br />
