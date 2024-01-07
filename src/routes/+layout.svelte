@@ -45,9 +45,7 @@
 			</a>
 		</RadioGroup>
 	</svelte:fragment>
-	<main class="2xl:max-w-[70%] 2xl:mx-auto">
-		<slot />
-	</main>
+	<slot />
 	<svelte:fragment slot="footer">
 		<footer class="text-center p-8 md:w-[50%] mx-auto">
 			<h1 class="font-bold font-heading-token">© Neville Brem 2024</h1>
@@ -59,7 +57,7 @@
 					><i class="fa-brands fa-x-twitter text-2xl"></i></a
 				>
 				<a class="btn" href="mailto:contact@nevillebrem.com"
-					><i class="fa-regular fa-envelope text-2xl"></i></a
+					><i class="fa-solid fa-envelope text-2xl"></i></a
 				>
 			</div>
 		</footer>

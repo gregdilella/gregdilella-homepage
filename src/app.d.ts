@@ -7,3 +7,11 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+declare interface TProject {
+	name: string;
+	desc: string;
+	link: string;
+	gHlink: string;
+	tech: string[];
+}
