@@ -1,11 +1,13 @@
 <script lang="ts">
 	import me from '$lib/assets/me.jpg';
+	import Timeline from '$lib/components/Timeline.svelte';
 </script>
 
 <svelte:head>
 	<title>Neville Brem - Home</title>
 	<meta name="description" content="The Homepage of Neville Brem" />
 </svelte:head>
+
 <main class="2xl:max-w-[70%] 2xl:mx-auto">
 	<div class="flex h-screen justify-center">
 		<div class="flex justify-center flex-col">
@@ -37,7 +39,10 @@
 	</div>
 
 	<!-- About -->
-	<div class="grid grid-cols-2 py-8 w-[80%] mx-auto" id="about">
+	<div
+		class="flex flex-col-reverse gap-16 xl:gap-0 xl:grid grid-cols-2 py-8 w-[80%] mx-auto"
+		id="about"
+	>
 		<div class="flex justify-center items-center">
 			<div class="max-w-[75%]">
 				<h1 class="h1 font-black">About me</h1>
@@ -61,7 +66,10 @@
 	</div>
 
 	<!-- Information -->
-	<div id="information" class="w-[80%] mx-auto grid grid-cols-3 grid-row-4 gap-8 py-8">
+	<div
+		id="information"
+		class="w-[80%] mx-auto xl:grid flex flex-col grid-cols-3 grid-row-4 gap-8 py-8"
+	>
 		<div class="bento-box flex justify-center">
 			<div class="my-auto">
 				<h1
@@ -82,9 +90,9 @@
 				Commits on <a href="https://github.com/nevthereal" target="_blank" class="anchor">GitHub</a>
 			</p>
 		</div>
-		<div class="grid grid-cols-2 gap-8 col-span-2">
+		<div class="xl:grid flex flex-col grid-rows-2 gap-8 row-span-2">
 			<div class="bento-box bg-gradient-to-t from-white/25 to-cyan-500/25">
-				<h1 class="bento-heading text-6xl">Stack 1:</h1>
+				<h1 class="bento-heading text-4xl md:text-6xl">Stack 1:</h1>
 				<ul class="list-disc list-inside text-left text-xl font-bold">
 					<li><a href="https://react.dev" target="_blank">React</a></li>
 					<li><a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></li>
@@ -93,7 +101,7 @@
 				</ul>
 			</div>
 			<div class="bento-box bg-gradient-to-b from-white/25 to-orange-500/25">
-				<h1 class="bento-heading text-6xl">Stack 2:</h1>
+				<h1 class="bento-heading text-4xl md:text-6xl">Stack 2:</h1>
 				<ul class="list-disc list-inside text-left text-xl font-bold">
 					<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
 					<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
@@ -103,14 +111,14 @@
 				</ul>
 			</div>
 		</div>
-		<div class="bento-box row-span-2 flex flex-col">
+		<div class="bento-box row-span-2 col-span-2 flex flex-col">
 			<div class="text-left m-auto">
 				<h1
-					class="bento-heading text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+					class="bento-heading text-4xl xl:text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
 				>
 					Why me?
 				</h1>
-				<ul class="list-decimal list-inside text-xl font-bold">
+				<ul class="list-decimal list-inside text-lg xl:text-2xl font-semibold">
 					<li>Beautifully crafted Websites</li>
 					<li>Modern Design</li>
 					<li>Keen eye on detail</li>
@@ -118,40 +126,44 @@
 				</ul>
 			</div>
 		</div>
-		<div class="bento-box col-span-2 flex">
-			<div class="text-left mx-auto flex flex-col">
-				<i
-					class="fa-solid fa-quote-left text-left text-3xl mx-auto bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
-				></i>
-				<p class="text-left text-2xl font-semibold italic">
-					Design is not just what it looks like and feels like. Design is how it works. <br />
-					<span class="font-normal text-lg">- Steve Jobs</span>
-				</p>
+		<div class="col-span-3 xl:grid flex flex-col grid-cols-2 gap-8">
+			<div class="bento-box flex">
+				<div class="text-left mx-auto flex flex-col">
+					<i
+						class="fa-solid fa-quote-left text-left text-3xl mx-auto bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+					></i>
+					<p class="text-center text-2xl font-semibold italic">
+						Design is not just what it looks like and feels like. Design is how it works. <br />
+						<span class="font-normal text-lg">- Steve Jobs</span>
+					</p>
+				</div>
+			</div>
+			<div class="bento-box flex justify-center items-center">
+				<div>
+					<h1
+						class="bento-heading text-4xl bg-gradient-to-bl from-primary-500 to-tertiary-500 bg-clip-text text-transparent hover:tracking-widest duration-200 ease-in-out"
+					>
+						Interactivity
+					</h1>
+					<p>
+						Creates a feeling of <span class="group font-bold"
+							>connection <a href="https://github.com/nevthereal" class="hidden group-hover:inline"
+								><i class="fa-solid fa-link"></i></a
+							></span
+						> to the site.
+					</p>
+				</div>
 			</div>
 		</div>
-		<div class="col-span-3 grid grid-cols-2 gap-8">
-			<div class="bento-box">
-				<h1
-					class="bento-heading text-4xl bg-gradient-to-bl from-primary-500 to-tertiary-500 bg-clip-text text-transparent hover:tracking-widest duration-200 ease-in-out"
-				>
-					Interactivity
-				</h1>
-				<p>
-					Creates a feeling of <span class="group font-bold"
-						>connection <a href="https://github.com/nevthereal" class="hidden group-hover:inline"
-							><i class="fa-solid fa-link"></i></a
-						></span
-					> to the site.
-				</p>
-			</div>
-			<div class="bento-box">
-				<h1
-					class="bento-heading text-7xl bg-gradient-to-tr from-primary-500 to-secondary-500 bg-clip-text text-transparent"
-				>
-					IDK
-				</h1>
-				<p>What to write here</p>
-			</div>
+	</div>
+	<!-- Timeline -->
+	<div class="my-16">
+		<div class="text-center my-8">
+			<h1 class="h1 font-black">Timeline</h1>
+			<h4 class="h4 font-semibold italic">Key moments</h4>
+		</div>
+		<div class="w-[80%] mx-auto xl:w-[60%] card p-8">
+			<Timeline />
 		</div>
 	</div>
 </main>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
+	import { AppShell, Modal, RadioGroup, RadioItem, initializeStores } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
 
 	let value: number = 0;
@@ -11,8 +11,11 @@
 	} else if ($page.url.pathname === '/contact') {
 		value = 2;
 	}
+
+	initializeStores();
 </script>
 
+<Modal />
 <AppShell>
 	<svelte:fragment slot="sidebarLeft">
 		<RadioGroup class="fixed left-6 top-1/2 -translate-y-1/2" flexDirection="flex-col" gap="gap-2">

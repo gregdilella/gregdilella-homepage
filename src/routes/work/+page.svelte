@@ -18,7 +18,7 @@
 		},
 		{
 			name: 'Codoodle',
-			desc: 'The agency website I built to test out SvelteKit.',
+			desc: 'A Blog built with SvelteKit and the most bleeding edge tech.',
 			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
 			link: 'https://codoodle.xyz',
 			gHlink: 'https://github.com/nevthereal/codoodle'
@@ -28,7 +28,7 @@
 
 <svelte:head>
 	<title>Neville Brem - Work</title>
-	<meta name="description" content="The Homepage of Neville Brem" />
+	<meta name="description" content="Projects of Neville Brem" />
 </svelte:head>
 
 <main class="2xl:w-[60%] 2xl:mx-auto">
