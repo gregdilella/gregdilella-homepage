@@ -48,8 +48,10 @@
 			{/each}
 		</div>
 		<p>
-			* All SvelteKit applications use <a href="https://skeleton.dev" class="anchor" target="_blank"
-				>Skeleton UI</a
+			* These SvelteKit applications are built with <a
+				href="https://skeleton.dev"
+				class="anchor"
+				target="_blank">Skeleton UI</a
 			>
 		</p>
 	</div>
