@@ -6,8 +6,10 @@
 		type: 'confirm',
 		title: 'That was my story!',
 		body: 'Want to see my Projects?',
-		response: () => {
-			goto('/work');
+		response: (e) => {
+			if (e) {
+				goto('/work');
+			}
 		}
 	};
 	const modalStore = getModalStore();

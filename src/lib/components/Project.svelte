@@ -19,11 +19,11 @@
 	</div>
 	<div>
 		<div class="flex gap-4">
-			<a href={project.link} class="btn chip variant-ghost-surface aspect-square" target="_blank"
-				><i class="fa-solid fa-globe text-xl"></i></a
+			<a href={project.link} class="link-icon" target="_blank"
+				><i class="fa-solid fa-globe text-2xl"></i></a
 			>
-			<a href={project.gHlink} class="btn chip variant-ghost-surface aspect-square" target="_blank"
-				><i class="fa-brands fa-github text-xl"></i></a
+			<a href={project.gHlink} class="link-icon" target="_blank"
+				><i class="fa-brands fa-github text-2xl"></i></a
 			>
 		</div>
 	</div>
