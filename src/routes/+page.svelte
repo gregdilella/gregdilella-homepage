@@ -15,7 +15,9 @@
 				<div
 					class="absolute inset-0 bg-primary-500 blur-2xl rounded-full opacity-50 group-hover:opacity-75 ease-in-out duration-500"
 				></div>
-				<h1 class="mx-auto text-8xl font-black relative font-heading-token">Neville Brem</h1>
+				<h1 class="mx-auto text-8xl font-black relative font-heading-token text-center">
+					Neville Brem
+				</h1>
 			</div>
 			<h3 class="mx-auto italic h3 pt-4 font-semibold">
 				Bringing <span
@@ -58,10 +60,10 @@
 			</div>
 		</div>
 		<span
-			class="before:block before:absolute before:-inset-1 before:translate-x-4 before:translate-y-4 relative inline-block before:w-1/2 before:m-auto before:card before:variant-ghost-primary"
+			class="before:block before:absolute before:-inset-1 before:translate-x-4 before:translate-y-4 relative inline-block 2xl:before:w-1/2 before:w-full before:m-auto before:card before:variant-ghost-primary"
 		>
-			<img src={me} alt="me:)" class="w-1/2 m-auto card relative" />
-			<span> </span></span
+			<img src={me} alt="me:)" class="2xl:w-1/2 w-full m-auto card relative" />
+			<span></span></span
 		>
 	</div>
 

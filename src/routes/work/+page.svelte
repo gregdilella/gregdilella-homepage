@@ -31,7 +31,7 @@
 	<meta name="description" content="Projects of Neville Brem" />
 </svelte:head>
 
-<main class="2xl:w-[60%] 2xl:mx-auto">
+<main class="2xl:w-[60%] 2xl:mx-auto mx-8">
 	<div class="text-center">
 		<div class="my-16">
 			<h1 class="font-heading-token font-black text-7xl">Work</h1>
@@ -42,7 +42,7 @@
 			These are the few I've published, you can find my whole history on
 			<a href="https://github.com/nevthereal" class="anchor" target="_blank">GitHub</a>.
 		</p>
-		<div class="grid grid-cols-3 gap-8 my-16">
+		<div class="2xl:grid 2xl:grid-cols-3 gap-8 my-16 flex-col flex">
 			{#each projects as project}
 				<Project {project} />
 			{/each}
