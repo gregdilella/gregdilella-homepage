@@ -15,7 +15,7 @@
 				<div
 					class="absolute inset-0 bg-primary-500 blur-2xl rounded-full opacity-50 group-hover:opacity-75 ease-in-out duration-500"
 				></div>
-				<h1 class="mx-auto text-8xl font-black relative font-heading-token text-center">
+				<h1 class="mx-auto text-7xl md:text-8xl font-black relative font-heading-token text-center">
 					Neville Brem
 				</h1>
 			</div>
@@ -46,7 +46,7 @@
 		id="about"
 	>
 		<div class="flex justify-center items-center">
-			<div class="max-w-[75%]">
+			<div class="md:max-w-[75%]">
 				<h1 class="h1 font-black">About me</h1>
 				<p class="mt-2">
 					Hey there, my name is Neville Brem and I am a Web Developer from Zurich, Switzerland. I

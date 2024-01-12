@@ -1,52 +1,34 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, Modal, RadioGroup, RadioItem, initializeStores } from '@skeletonlabs/skeleton';
-	import { page } from '$app/stores';
-
-	let value: number = 0;
-	$: if ($page.url.pathname === '/') {
-		value = 0;
-	} else if ($page.url.pathname === '/work') {
-		value = 1;
-	} else if ($page.url.pathname === '/contact') {
-		value = 2;
-	}
+	import {
+		AppShell,
+		Drawer,
+		Modal,
+		getDrawerStore,
+		initializeStores
+	} from '@skeletonlabs/skeleton';
+	import Navbar from '$lib/components/Navbar.svelte';
 
 	initializeStores();
+
+	const drawerStore = getDrawerStore();
 </script>
 
 <Modal />
+<Drawer>
+	{#if $drawerStore.id === 'nav'}
+		<div class="flex justify-center gap-8 p-4 text-2xl">
+			<a on:click={() => drawerStore.close()} href="/"><i class="fa-solid fa-house"></i></a>
+			<a on:click={() => drawerStore.close()} href="/work"><i class="fa-solid fa-suitcase"></i></a>
+			<a on:click={() => drawerStore.close()} href="/contact"
+				><i class="fa-solid fa-address-book"></i></a
+			>
+		</div>
+	{/if}
+</Drawer>
 <AppShell>
 	<svelte:fragment slot="sidebarLeft">
-		<RadioGroup class="fixed left-6 top-1/2 -translate-y-1/2" flexDirection="flex-col" gap="gap-2">
-			<a href="/" class="flex justify-center">
-				<RadioItem
-					bind:group={value}
-					name="home"
-					value={0}
-					class="rounded-full aspect-square text-xl my-auto flex justify-center"
-					><i class="fa-solid fa-house m-auto"></i>
-				</RadioItem></a
-			>
-			<a href="/work" class="flex justify-center">
-				<RadioItem
-					bind:group={value}
-					name="work"
-					value={1}
-					class="rounded-full aspect-square text-xl my-auto flex justify-center"
-					><i class="fa-solid fa-suitcase m-auto"></i></RadioItem
-				></a
-			>
-			<a href="/contact" class="flex justify-center">
-				<RadioItem
-					bind:group={value}
-					name="contact"
-					value={2}
-					class="rounded-full aspect-square text-xl my-auto flex justify-center group"
-					><i class="fa-solid fa-address-book m-auto"></i>
-				</RadioItem>
-			</a>
-		</RadioGroup>
+		<Navbar />
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="footer">
