@@ -2,7 +2,8 @@ import type { Actions } from './$types';
 import { z } from 'zod';
 import { superValidate, setMessage } from 'sveltekit-superforms/server';
 import { fail } from '@sveltejs/kit';
-import { EMAILJS_KEY } from '$env/static/private';
+
+const { EMAILJS_KEY } = import.meta.env;
 
 const formSchema = z
 	.object({
