@@ -9,7 +9,7 @@
 	});
 </script>
 
-<main class="2xl:max-w-[50%] 2xl:mx-auto">
+<main class="2xl:max-w-[50%] 2xl:mx-auto mx-8">
 	<div class="text-center">
 		<div class="my-16">
 			<h1 class="font-heading-token font-black text-7xl">Contact</h1>
@@ -18,8 +18,8 @@
 	</div>
 
 	<div class="my-8">
-		<h2 class="h2 font-bold mb-4">Socials</h2>
-		<div class="grid grid-cols-3 gap-4">
+		<h2 class="h2 font-bold mb-4">Check out my socials</h2>
+		<div class="grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 gap-4">
 			<ContactBadge
 				link="https://instagram.com/nevillebrem"
 				title="Instagram"
@@ -34,7 +34,7 @@
 			/>
 			<ContactBadge
 				link="https://x.com/BremNeville"
-				title="X (Twitter)"
+				title="Twitter"
 				body="I use x, btw"
 				icon="fa-brands fa-x-twitter"
 			/>
@@ -43,7 +43,7 @@
 
 	<div class="my-8">
 		<h2 class="h2 font-bold mb-4">Contact me</h2>
-		<form method="POST" use:enhance class="flex flex-col gap-4">
+		<form method="POST" use:enhance class="flex flex-col gap-4 card p-6">
 			<div class="flex flex-col gap-2">
 				<label for="user_name">Name</label>
 				<input class="input" bind:value={$form.user_name} type="text" name="user_name" />

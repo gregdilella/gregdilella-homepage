@@ -9,6 +9,6 @@
 	<div class="chip text-2xl"><i class={icon}></i></div>
 	<div class="my-auto">
 		<h3 class="h3 font-bold">{title}</h3>
-		<p>{body}</p>
+		<p class="hidden md:block">{body}</p>
 	</div>
 </a>
