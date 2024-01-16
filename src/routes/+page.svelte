@@ -70,7 +70,7 @@
 	<!-- Information -->
 	<div
 		id="information"
-		class="w-[80%] mx-auto xl:grid flex flex-col grid-cols-3 grid-row-4 gap-8 py-8"
+		class="w-[80%] mx-auto xl:grid flex flex-col grid-cols-3 grid-row-3 gap-8 py-8"
 	>
 		<div class="bento-box flex justify-center">
 			<div class="my-auto">
@@ -92,27 +92,6 @@
 				Commits on <a href="https://github.com/nevthereal" target="_blank" class="anchor">GitHub</a>
 			</p>
 		</div>
-		<div class="xl:grid flex flex-col grid-rows-2 gap-8 row-span-2">
-			<div class="bento-box bg-gradient-to-t from-white/25 to-cyan-500/25">
-				<h1 class="bento-heading text-4xl md:text-6xl">Stack 1:</h1>
-				<ul class="list-disc list-inside text-left text-xl font-bold">
-					<li><a href="https://react.dev" target="_blank">React</a></li>
-					<li><a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></li>
-					<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
-					<li><a href="https://framer.com/motion" target="_blank">framer-motion</a></li>
-				</ul>
-			</div>
-			<div class="bento-box bg-gradient-to-b from-white/25 to-orange-500/25">
-				<h1 class="bento-heading text-4xl md:text-6xl">Stack 2:</h1>
-				<ul class="list-disc list-inside text-left text-xl font-bold">
-					<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
-					<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
-					<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
-					<li><a href="https://turso.tech" target="_blank">Turso</a></li>
-					<li><a href="https://lucia-auth.com" target="_blank">Lucia Auth</a></li>
-				</ul>
-			</div>
-		</div>
 		<div class="bento-box row-span-2 col-span-2 flex flex-col">
 			<div class="text-left m-auto">
 				<h1
@@ -127,6 +106,16 @@
 					<li>Fast response times</li>
 				</ul>
 			</div>
+		</div>
+		<div class="bento-box bg-gradient-to-b from-white/25 to-orange-500/25 h-full">
+			<h1 class="bento-heading text-4xl md:text-6xl">Stack:</h1>
+			<ul class="list-disc list-inside text-left text-xl font-bold">
+				<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
+				<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
+				<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
+				<li><a href="https://turso.tech" target="_blank">Turso</a></li>
+				<li><a href="https://lucia-auth.com" target="_blank">Lucia Auth</a></li>
+			</ul>
 		</div>
 		<div class="col-span-3 xl:grid flex flex-col grid-cols-2 gap-8">
 			<div class="bento-box flex">
