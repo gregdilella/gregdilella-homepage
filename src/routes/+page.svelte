@@ -28,7 +28,7 @@
 			<div class="mx-auto mt-6 group">
 				<a
 					href="#about"
-					class="font-bold btn bg-primary-500 text-xl p-4 border-b-4 border-white hover:border-primary-500 hover:text-primary-500 hover:bg-white duration-200 ease-in-out active:border-none"
+					class="font-bold btn bg-primary-500 text-md p-4 border-b-4 border-white hover:border-primary-500 hover:text-primary-500 hover:bg-white duration-200 ease-in-out active:border-none"
 					>Explore</a
 				>
 				<p
@@ -42,7 +42,7 @@
 
 	<!-- About -->
 	<div
-		class="flex flex-col-reverse gap-16 xl:gap-0 xl:grid grid-cols-2 py-8 w-[80%] mx-auto"
+		class="flex flex-col-reverse gap-16 md:gap-0 md:grid grid-cols-2 py-8 w-[80%] mx-auto"
 		id="about"
 	>
 		<div class="flex justify-center items-center">
@@ -70,7 +70,7 @@
 	<!-- Information -->
 	<div
 		id="information"
-		class="w-[80%] mx-auto xl:grid flex flex-col grid-cols-3 grid-row-3 gap-8 py-8"
+		class="w-[80%] mx-auto md:grid flex flex-col grid-cols-3 grid-row-3 gap-8 py-8"
 	>
 		<div class="bento-box flex justify-center">
 			<div class="my-auto">
@@ -92,14 +92,14 @@
 				Commits on <a href="https://github.com/nevthereal" target="_blank" class="anchor">GitHub</a>
 			</p>
 		</div>
-		<div class="bento-box row-span-2 col-span-2 flex flex-col">
+		<div class="bento-box col-span-2 flex flex-col">
 			<div class="text-left m-auto">
 				<h1
-					class="bento-heading text-4xl xl:text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+					class="bento-heading text-4xl md:text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
 				>
 					Why me?
 				</h1>
-				<ul class="list-decimal list-inside text-lg xl:text-2xl font-semibold">
+				<ul class="list-decimal list-inside text-lg md:text-2xl font-semibold">
 					<li>Beautifully crafted Websites</li>
 					<li>Modern Design</li>
 					<li>Keen eye on detail</li>
@@ -107,9 +107,9 @@
 				</ul>
 			</div>
 		</div>
-		<div class="bento-box bg-gradient-to-b from-white/25 to-orange-500/25 h-full">
+		<div class="bento-box bg-gradient-to-b from-white/25 to-orange-500/25">
 			<h1 class="bento-heading text-4xl md:text-6xl">Stack:</h1>
-			<ul class="list-disc list-inside text-left text-xl font-bold">
+			<ul class="list-disc list-inside text-left text-md font-bold">
 				<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
 				<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
 				<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
@@ -117,7 +117,7 @@
 				<li><a href="https://lucia-auth.com" target="_blank">Lucia Auth</a></li>
 			</ul>
 		</div>
-		<div class="col-span-3 xl:grid flex flex-col grid-cols-2 gap-8">
+		<div class="col-span-3 md:grid flex flex-col grid-cols-2 gap-8">
 			<div class="bento-box flex">
 				<div class="text-left mx-auto flex flex-col">
 					<i
@@ -154,7 +154,7 @@
 			<h1 class="h1 font-black">Timeline</h1>
 			<h4 class="h4 font-semibold italic">Key moments</h4>
 		</div>
-		<div class="w-[80%] mx-auto xl:w-[60%] card p-8">
+		<div class="w-[80%] mx-auto md:w-[60%] card p-8">
 			<Timeline />
 		</div>
 	</div>
