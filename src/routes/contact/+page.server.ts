@@ -2,8 +2,7 @@ import type { Actions } from './$types';
 import { z } from 'zod';
 import { superValidate, setMessage } from 'sveltekit-superforms/server';
 import { fail } from '@sveltejs/kit';
-
-const { EMAILJS_KEY } = import.meta.env;
+import { EMAILJS_KEY } from '$env/static/private';
 
 const formSchema = z
 	.object({
@@ -26,9 +25,9 @@ export const actions = {
 		const data = {
 			service_id: 'service_m5dhn7u',
 			template_id: 'template_0ea3ewq',
-			accessToken: EMAILJS_KEY,
 			user_id: '9KMOedTUZog1ajUbn',
-			template_params: form.data
+			template_params: form.data,
+			accessToken: EMAILJS_KEY
 		};
 
 		await fetch('https://api.emailjs.com/api/v1.0/email/send', {
@@ -37,11 +36,11 @@ export const actions = {
 			headers: {
 				'content-type': 'application/json'
 			}
-		}).then(({ ok }) => {
+		}).then(({ ok, status, statusText }) => {
 			if (!ok) {
-				setMessage(form, 'Something went wrong');
+				return setMessage(form, `Something went wrong ${status} ${statusText}`);
 			}
-			setMessage(form, 'Your email was sent successfully!');
+			return setMessage(form, 'Your email was sent successfully!');
 		});
 
 		return { form };

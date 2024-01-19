@@ -4,8 +4,9 @@
 	import ContactBadge from '$lib/components/ContactBadge.svelte';
 
 	export let data: PageData;
-	const { form, enhance, errors, message } = superForm(data.form, {
-		resetForm: true
+	const { form, enhance, errors, message, delayed } = superForm(data.form, {
+		resetForm: true,
+		delayMs: 0
 	});
 </script>
 
@@ -66,9 +67,15 @@
 				{/if}
 			</div>
 			{#if $message}
-				<span class="">{$message}</span>
+				<span class="text-warning-500">{$message}</span>
 			{/if}
-			<button class="btn variant-filled-primary mx-auto font-bold">Submit!</button>
+			<button class="btn variant-filled-primary mx-auto font-bold"
+				>{#if !$delayed}
+					Submit!
+				{:else}
+					Loading ...
+				{/if}</button
+			>
 		</form>
 	</div>
 </main>
