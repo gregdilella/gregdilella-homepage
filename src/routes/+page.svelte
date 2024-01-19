@@ -138,8 +138,9 @@
 					</h1>
 					<p>
 						Creates a feeling of <span class="group font-bold"
-							>connection <a href="https://github.com/nevthereal" class="hidden group-hover:inline"
-								><i class="fa-solid fa-link"></i></a
+							>connection <a
+								href="https://github.com/nevthereal/portfolio"
+								class="hidden group-hover:inline"><i class="fa-solid fa-link"></i></a
 							></span
 						> to the site.
 					</p>
