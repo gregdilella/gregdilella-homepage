@@ -65,7 +65,7 @@
 
 <button
 	on:click={() => drawerStore.open(navSettings)}
-	class="md:hidden btn variant-ghost-surface fixed top-6 left-6 chip aspect-square flex items-center"
+	class="md:hidden btn variant-ghost-surface fixed top-6 left-6 chip aspect-square flex items-center z-20"
 >
 	<i class="fa-solid fa-bars-staggered text-lg"></i>
 </button>
