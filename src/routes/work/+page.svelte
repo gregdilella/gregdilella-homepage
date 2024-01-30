@@ -20,7 +20,7 @@
 			name: 'Codoodle',
 			desc: 'A Blog built with SvelteKit and the most bleeding edge tech.',
 			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
-			link: 'https://codoodle.xyz',
+			link: 'https://blog.nevillebrem.com',
 			gHlink: 'https://github.com/nevthereal/codoodle'
 		}
 	];
@@ -38,8 +38,8 @@
 			<h4 class="h4 font-semibold italic">Selection of projects</h4>
 		</div>
 		<p>
-			I've worked on a couple different projects ranging from React to SvelteKit apps. <br />
-			These are the few I've published, you can find my whole history on
+			I've worked on a couple different projects. <br />
+			These are the few I've published, you can find all of my projects on
 			<a href="https://github.com/nevthereal" class="anchor" target="_blank">GitHub</a>.
 		</p>
 		<div class="2xl:grid 2xl:grid-cols-3 gap-8 my-16 flex-col flex">
