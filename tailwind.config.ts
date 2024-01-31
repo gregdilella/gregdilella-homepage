@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin';
-import { abyss } from './src/theme';
+import { abyss } from './src/abyss';
 
 export default {
 	darkMode: 'class',
