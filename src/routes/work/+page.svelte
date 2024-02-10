@@ -24,9 +24,9 @@
 			gHlink: 'https://github.com/nevthereal/codoodle'
 		},
 		{
-			name: 'BarMates',
+			name: 'BarMates Homepage',
 			desc: 'A landing page for a sports nutrition business',
-			tech: ['Astro', 'TailwindCSS', 'React', 'framer-motion'],
+			tech: ['Astro', 'TailwindCSS', 'Svelte (for Components)', 'daisy UI'],
 			link: 'https://barmates.netlify.app',
 			gHlink: 'https://github.com/nevthereal/barmates-astro'
 		}
