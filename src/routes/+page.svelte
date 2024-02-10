@@ -111,10 +111,10 @@
 			<h1 class="bento-heading text-4xl md:text-6xl">Stack:</h1>
 			<ul class="list-disc list-inside text-left text-md font-bold">
 				<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
+				<li><a href="https://astro.build" target="_blank">Astro</a></li>
 				<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
 				<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
 				<li><a href="https://turso.tech" target="_blank">Turso</a></li>
-				<li><a href="https://lucia-auth.com" target="_blank">Lucia Auth</a></li>
 			</ul>
 		</div>
 		<div class="col-span-3 md:grid flex flex-col grid-cols-2 gap-8">
