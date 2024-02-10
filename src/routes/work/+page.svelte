@@ -22,6 +22,13 @@
 			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
 			link: 'https://blog.nevillebrem.com',
 			gHlink: 'https://github.com/nevthereal/codoodle'
+		},
+		{
+			name: 'BarMates',
+			desc: 'A landing page for a sports nutrition business',
+			tech: ['Astro', 'TailwindCSS', 'React', 'framer-motion'],
+			link: 'https://barmates.netlify.app',
+			gHlink: 'https://github.com/nevthereal/barmates-astro'
 		}
 	];
 </script>
