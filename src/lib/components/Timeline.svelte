@@ -46,8 +46,9 @@
 	<Step>
 		<svelte:fragment slot="header">Summer 2023</svelte:fragment>
 		After a long break of coding, I got back into development. Rebranded Wolffe Bricks and rebuilt the
-		website with Stripe and built a backend in JavaScript. Later I discovered TypeScript and built my
-		<a href="https://barmates.netlify.app" target="_blank" class="anchor">favorite landing page</a>.
+		website with Stripe and built a backend in expressjs. Later I discovered TypeScript and built my
+		<a href="https://barmates.netlify.app" target="_blank" class="anchor">favorite landing page</a> utilising
+		framer-motion.
 	</Step>
 	<Step>
 		<svelte:fragment slot="header">Fall 2023</svelte:fragment>
@@ -55,6 +56,8 @@
 	</Step>
 	<Step>
 		<svelte:fragment slot="header">Early 2024</svelte:fragment>
-		Rocking my first Full Stack Projects!
+		Rocking my first Full Stack Projects. You can discover these on the
+		<a href="/work" class="anchor">Work</a> page. I als learned Astro for more content-driven and static
+		pages like landing pages.
 	</Step>
 </Stepper>
