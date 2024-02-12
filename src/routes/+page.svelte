@@ -84,7 +84,7 @@
 		</div>
 		<div class="bento-box col-span-2">
 			<h1
-				class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent text-8xl"
+				class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent text-6xl md:text-8xl"
 			>
 				500+
 			</h1>
