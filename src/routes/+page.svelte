@@ -6,6 +6,15 @@
 <svelte:head>
 	<title>Neville Brem - Home</title>
 	<meta name="description" content="The Homepage of Neville Brem" />
+	<meta property="og:title" content="Neville Brem" />
+	<meta property="og:image" content="favicon.png" />
+	<meta property="og:description" content="Homepage of Neville Brem" />
+	<meta property="og:url" content="https://www.nevillebrem.com" />
+	<meta property="twitter:description" content="Homepage of Neville Brem" />
+	<meta property="twitter:title" content="Neville Brem" />
+	<meta property="twitter:image" content="favicon.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@BremNeville" />
 </svelte:head>
 
 <main class="2xl:max-w-[70%] 2xl:mx-auto">
