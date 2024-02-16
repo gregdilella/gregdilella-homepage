@@ -25,7 +25,9 @@
 		border: 'border-surface-400-500-token border',
 		height: 'h-auto',
 		padding: 'p-4',
-		rounded: 'rounded-token'
+		rounded: 'rounded-token',
+		width: 'w-auto',
+		regionDrawer: 'mx-auto'
 	};
 </script>
 
