@@ -32,42 +32,57 @@
 </script>
 
 <RadioGroup
-	class="hidden md:block fixed left-6 top-1/2 -translate-y-1/2"
+	class="fixed left-6 top-1/2 hidden -translate-y-1/2 md:block"
 	flexDirection="flex-col"
 	gap="gap-2"
 >
-	<a href="/" class="flex justify-center">
+	<a href="/" class="group relative flex justify-center">
 		<RadioItem
 			bind:group={value}
 			name="home"
 			value={0}
-			class="rounded-full aspect-square text-xl my-auto flex justify-center"
+			class="my-auto flex aspect-square justify-center rounded-full text-xl"
 			><i class="fa-solid fa-house m-auto"></i>
-		</RadioItem></a
-	>
-	<a href="/work" class="flex justify-center">
+		</RadioItem>
+		<div
+			class="absolute translate-x-14 translate-y-[70%] font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
+		>
+			Home
+		</div>
+	</a>
+	<a href="/work" class="group relative flex justify-center">
 		<RadioItem
 			bind:group={value}
 			name="work"
 			value={1}
-			class="rounded-full aspect-square text-xl my-auto flex justify-center"
+			class="my-auto flex aspect-square justify-center rounded-full text-xl"
 			><i class="fa-solid fa-suitcase m-auto"></i></RadioItem
-		></a
-	>
-	<a href="/contact" class="flex justify-center">
+		>
+		<div
+			class="absolute translate-x-14 translate-y-[70%] font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
+		>
+			Work
+		</div>
+	</a>
+	<a href="/contact" class="group relative flex justify-center">
 		<RadioItem
 			bind:group={value}
 			name="contact"
 			value={2}
-			class="rounded-full aspect-square text-xl my-auto flex justify-center group"
+			class="my-auto flex aspect-square justify-center rounded-full text-xl"
 			><i class="fa-solid fa-address-book m-auto"></i>
 		</RadioItem>
+		<div
+			class="absolute translate-x-14 translate-y-[70%] font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
+		>
+			Contact
+		</div>
 	</a>
 </RadioGroup>
 
 <button
 	on:click={() => drawerStore.open(navSettings)}
-	class="md:hidden btn variant-ghost-surface fixed top-6 left-6 chip aspect-square flex items-center z-20"
+	class="variant-ghost-surface btn chip fixed left-6 top-6 z-20 flex aspect-square items-center md:hidden"
 >
 	<i class="fa-solid fa-bars-staggered text-lg"></i>
 </button>
