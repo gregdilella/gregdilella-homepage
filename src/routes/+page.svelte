@@ -17,31 +17,31 @@
 	<meta name="twitter:site" content="@BremNeville" />
 </svelte:head>
 
-<main class="2xl:max-w-[70%] 2xl:mx-auto">
+<main class="2xl:mx-auto 2xl:max-w-[70%]">
 	<div class="flex h-screen justify-center">
-		<div class="flex justify-center flex-col">
-			<div class="relative group mx-auto">
+		<div class="flex flex-col justify-center">
+			<div class="group relative mx-auto">
 				<div
-					class="absolute inset-0 bg-primary-500 blur-2xl rounded-full opacity-50 group-hover:opacity-75 ease-in-out duration-500"
+					class="absolute inset-0 rounded-full bg-primary-500 opacity-50 blur-2xl duration-500 ease-in-out group-hover:opacity-75"
 				></div>
-				<h1 class="mx-auto text-7xl md:text-8xl font-black relative font-heading-token text-center">
+				<h1 class="relative mx-auto text-center text-7xl font-black font-heading-token md:text-8xl">
 					Neville Brem
 				</h1>
 			</div>
-			<h3 class="mx-auto italic h3 pt-4 font-semibold">
+			<h3 class="h3 mx-auto pt-4 font-semibold italic">
 				Bringing <span
-					class="font-extrabold text-primary-500 hover:tracking-widest duration-200 ease-in-out hover:text-green-500"
+					class="font-extrabold text-primary-500 duration-200 ease-in-out hover:tracking-widest hover:text-green-500"
 					>life</span
 				> to every page
 			</h3>
-			<div class="mx-auto mt-6 group">
+			<div class="group mx-auto mt-6">
 				<a
 					href="#about"
-					class="font-bold btn bg-primary-500 text-md p-4 border-b-4 border-white hover:border-primary-500 hover:text-primary-500 hover:bg-white duration-200 ease-in-out active:border-none"
+					class="text-md btn border-b-4 border-white bg-primary-500 p-4 font-bold duration-200 ease-in-out hover:border-primary-500 hover:bg-white hover:text-primary-500 active:border-none"
 					>Explore</a
 				>
 				<p
-					class="text-center mt-2 font-bold text-lg opacity-0 group-hover:opacity-100 duration-200 ease-in-out"
+					class="mt-2 text-center text-lg font-bold opacity-0 duration-200 ease-in-out group-hover:opacity-100"
 				>
 					Curious?
 				</p>
@@ -51,10 +51,10 @@
 
 	<!-- About -->
 	<div
-		class="flex flex-col-reverse gap-16 md:gap-0 md:grid grid-cols-2 py-8 w-[80%] mx-auto"
+		class="mx-auto flex w-[80%] grid-cols-2 flex-col-reverse gap-16 py-8 md:grid md:gap-0"
 		id="about"
 	>
-		<div class="flex justify-center items-center">
+		<div class="flex items-center justify-center">
 			<div class="md:max-w-[75%]">
 				<h1 class="h1 font-black">About me</h1>
 				<p class="mt-2">
@@ -69,9 +69,9 @@
 			</div>
 		</div>
 		<span
-			class="before:block before:absolute before:-inset-1 before:translate-x-4 before:translate-y-4 relative inline-block 2xl:before:w-1/2 before:w-full before:m-auto before:card before:variant-ghost-primary"
+			class="relative inline-block before:card before:variant-ghost-primary before:absolute before:-inset-1 before:m-auto before:block before:w-full before:translate-x-4 before:translate-y-4 2xl:before:w-1/2"
 		>
-			<img src={me} alt="me:)" class="2xl:w-1/2 w-full m-auto card relative" />
+			<img src={me} alt="me:)" loading="lazy" class="card relative m-auto w-full 2xl:w-1/2" />
 			<span></span></span
 		>
 	</div>
@@ -79,12 +79,12 @@
 	<!-- Information -->
 	<div
 		id="information"
-		class="w-[80%] mx-auto md:grid flex flex-col grid-cols-3 grid-row-3 gap-8 py-8"
+		class="grid-row-3 mx-auto flex w-[80%] grid-cols-3 flex-col gap-8 py-8 md:grid"
 	>
 		<div class="bento-box flex justify-center">
 			<div class="my-auto">
 				<h1
-					class="bento-heading text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+					class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-6xl text-transparent"
 				>
 					3 Years
 				</h1>
@@ -93,7 +93,7 @@
 		</div>
 		<div class="bento-box col-span-2">
 			<h1
-				class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent text-6xl md:text-8xl"
+				class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-6xl text-transparent md:text-8xl"
 			>
 				500+
 			</h1>
@@ -102,13 +102,13 @@
 			</p>
 		</div>
 		<div class="bento-box col-span-2 flex flex-col">
-			<div class="text-left m-auto">
+			<div class="m-auto text-left">
 				<h1
-					class="bento-heading text-4xl md:text-6xl bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+					class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-4xl text-transparent md:text-6xl"
 				>
 					Why me?
 				</h1>
-				<ul class="list-decimal list-inside text-lg md:text-2xl font-semibold">
+				<ul class="list-inside list-decimal text-lg font-semibold md:text-2xl">
 					<li>Beautifully crafted Websites</li>
 					<li>Modern Design</li>
 					<li>Keen eye on detail</li>
@@ -118,7 +118,7 @@
 		</div>
 		<div class="bento-box bg-gradient-to-b from-white/25 to-orange-500/25">
 			<h1 class="bento-heading text-4xl md:text-6xl">Stack:</h1>
-			<ul class="list-disc list-inside text-left text-md font-bold">
+			<ul class="text-md list-inside list-disc text-left font-bold">
 				<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
 				<li><a href="https://astro.build" target="_blank">Astro</a></li>
 				<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
@@ -126,22 +126,22 @@
 				<li><a href="https://turso.tech" target="_blank">Turso</a></li>
 			</ul>
 		</div>
-		<div class="col-span-3 md:grid flex flex-col grid-cols-2 gap-8">
+		<div class="col-span-3 flex grid-cols-2 flex-col gap-8 md:grid">
 			<div class="bento-box flex">
-				<div class="text-left mx-auto flex flex-col">
+				<div class="mx-auto flex flex-col text-left">
 					<i
-						class="fa-solid fa-quote-left text-left text-3xl mx-auto bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+						class="fa-solid fa-quote-left mx-auto bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-left text-3xl text-transparent"
 					></i>
 					<p class="text-center text-2xl font-semibold italic">
 						Design is not just what it looks like and feels like. Design is how it works. <br />
-						<span class="font-normal text-lg">- Steve Jobs</span>
+						<span class="text-lg font-normal">- Steve Jobs</span>
 					</p>
 				</div>
 			</div>
-			<div class="bento-box flex justify-center items-center">
+			<div class="bento-box flex items-center justify-center">
 				<div>
 					<h1
-						class="bento-heading text-4xl bg-gradient-to-bl from-primary-500 to-tertiary-500 bg-clip-text text-transparent hover:tracking-widest duration-200 ease-in-out"
+						class="bento-heading bg-gradient-to-bl from-primary-500 to-tertiary-500 bg-clip-text text-4xl text-transparent duration-200 ease-in-out hover:tracking-widest"
 					>
 						Interactivity
 					</h1>
@@ -159,11 +159,11 @@
 	</div>
 	<!-- Timeline -->
 	<div class="my-16">
-		<div class="text-center my-8">
+		<div class="my-8 text-center">
 			<h1 class="h1 font-black">Timeline</h1>
 			<h4 class="h4 font-semibold italic">Key moments</h4>
 		</div>
-		<div class="w-[80%] mx-auto md:w-[60%] card p-8">
+		<div class="card mx-auto w-[80%] p-8 md:w-[60%]">
 			<Timeline />
 		</div>
 	</div>
