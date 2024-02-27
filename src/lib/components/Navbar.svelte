@@ -32,7 +32,7 @@
 </script>
 
 <RadioGroup
-	class="fixed left-6 top-1/2 hidden -translate-y-1/2 md:block"
+	class="fixed left-6 top-1/2 hidden -translate-y-1/2 xl:block"
 	flexDirection="flex-col"
 	gap="gap-2"
 >
@@ -82,7 +82,7 @@
 
 <button
 	on:click={() => drawerStore.open(navSettings)}
-	class="variant-ghost-surface btn chip fixed left-6 top-6 z-20 flex aspect-square items-center md:hidden"
+	class="variant-ghost-surface btn chip fixed left-6 top-6 z-20 flex aspect-square items-center xl:hidden"
 >
 	<i class="fa-solid fa-bars-staggered text-lg"></i>
 </button>
