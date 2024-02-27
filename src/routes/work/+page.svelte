@@ -38,7 +38,7 @@
 	<meta name="description" content="Projects of Neville Brem" />
 </svelte:head>
 
-<main class="mx-8 xl:mx-auto xl:w-[60%]">
+<main class="mx-8 md:mx-auto md:w-[60%]">
 	<div class="text-center">
 		<div class="my-16">
 			<h1 class="text-7xl font-black font-heading-token">Work</h1>

@@ -10,7 +10,7 @@
 	});
 </script>
 
-<main class="mx-8 xl:mx-auto xl:max-w-[50%]">
+<main class="mx-8 md:mx-auto md:max-w-[50%]">
 	<div class="text-center">
 		<div class="my-16">
 			<h1 class="text-7xl font-black font-heading-token">Contact</h1>
@@ -20,7 +20,7 @@
 
 	<div class="my-8">
 		<h2 class="h2 mb-4 font-bold">Check out my socials</h2>
-		<div class="grid grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-1">
+		<div class="grid grid-rows-3 gap-4 xl:grid-cols-3 xl:grid-rows-1">
 			<ContactBadge
 				link="https://instagram.com/nevillebrem"
 				title="Instagram"
