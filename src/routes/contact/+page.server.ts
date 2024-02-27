@@ -26,7 +26,7 @@ export const actions = {
 			service_id: 'service_m5dhn7u',
 			template_id: 'template_0ea3ewq',
 			user_id: '9KMOedTUZog1ajUbn',
-			template_params: form.data,
+			template_params: { ...form.data, site: 'nevillebrem.com' },
 			accessToken: EMAILJS_KEY
 		};
 
