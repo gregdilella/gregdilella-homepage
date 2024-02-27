@@ -10,17 +10,17 @@
 	});
 </script>
 
-<main class="2xl:max-w-[50%] 2xl:mx-auto mx-8">
+<main class="mx-8 xl:mx-auto xl:max-w-[50%]">
 	<div class="text-center">
 		<div class="my-16">
-			<h1 class="font-heading-token font-black text-7xl">Contact</h1>
+			<h1 class="text-7xl font-black font-heading-token">Contact</h1>
 			<h4 class="h4 font-semibold italic">Where to find me</h4>
 		</div>
 	</div>
 
 	<div class="my-8">
-		<h2 class="h2 font-bold mb-4">Check out my socials</h2>
-		<div class="grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 gap-4">
+		<h2 class="h2 mb-4 font-bold">Check out my socials</h2>
+		<div class="grid grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-1">
 			<ContactBadge
 				link="https://instagram.com/nevillebrem"
 				title="Instagram"
@@ -43,8 +43,8 @@
 	</div>
 
 	<div class="my-8">
-		<h2 class="h2 font-bold mb-4">Contact me</h2>
-		<form method="POST" use:enhance class="flex flex-col gap-4 card p-6">
+		<h2 class="h2 mb-4 font-bold">Contact me</h2>
+		<form method="POST" use:enhance class="card flex flex-col gap-4 p-6">
 			<div class="flex flex-col gap-2">
 				<label for="user_name">Name</label>
 				<input class="input" bind:value={$form.user_name} type="text" name="user_name" />
@@ -69,7 +69,7 @@
 			{#if $message}
 				<span class="text-warning-500">{$message}</span>
 			{/if}
-			<button class="btn variant-filled-primary mx-auto font-bold"
+			<button class="variant-filled-primary btn mx-auto font-bold"
 				>{#if !$delayed}
 					Submit!
 				{:else}
