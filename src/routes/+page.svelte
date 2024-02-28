@@ -95,7 +95,7 @@
 			<h1
 				class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-6xl text-transparent md:text-8xl"
 			>
-				500+
+				1K+
 			</h1>
 			<p>
 				Commits on <a href="https://github.com/nevthereal" target="_blank" class="anchor">GitHub</a>
