@@ -98,7 +98,9 @@
 				1K+
 			</h1>
 			<p>
-				Commits on <a href="https://github.com/nevthereal" target="_blank" class="anchor">GitHub</a>
+				Contributions on <a href="https://github.com/nevthereal" target="_blank" class="anchor"
+					>GitHub</a
+				>
 			</p>
 		</div>
 		<div class="bento-box col-span-2 flex flex-col">
