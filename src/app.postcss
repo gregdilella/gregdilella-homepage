@@ -6,6 +6,7 @@
 @font-face {
 	font-family: 'Geist';
 	src: url('/fonts/Geist.ttf');
+	font-display: swap;
 }
 
 :root [data-theme='abyss'] {
@@ -17,17 +18,17 @@ html {
 }
 
 .bento-box {
-	@apply card variant-ghost-surface p-8 hover:shadow-lg duration-200 text-center rounded-container-token;
+	@apply card variant-ghost-surface p-8 text-center duration-200 rounded-container-token hover:shadow-lg;
 }
 
 .bento-heading {
-	@apply font-black mb-4 font-heading-token;
+	@apply mb-4 font-black font-heading-token;
 }
 
 .disc-list {
-	@apply list-disc list-inside;
+	@apply list-inside list-disc;
 }
 
 .link-icon {
-	@apply btn chip variant-ghost-surface aspect-square;
+	@apply variant-ghost-surface btn chip aspect-square;
 }
