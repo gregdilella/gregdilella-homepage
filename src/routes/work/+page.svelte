@@ -27,7 +27,7 @@
 			name: 'BarMates Homepage',
 			desc: 'A landing page for a sports nutrition business',
 			tech: ['Astro', 'TailwindCSS', 'Svelte', 'daisy UI'],
-			link: 'https://barmates.netlify.app',
+			link: 'https://barmates.ch',
 			gHlink: 'https://github.com/nevthereal/barmates-landing'
 		}
 	];
