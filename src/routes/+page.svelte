@@ -18,7 +18,7 @@
 </svelte:head>
 
 <main class="2xl:mx-auto 2xl:max-w-[70%]">
-	<div class="flex h-screen justify-center">
+	<section class="flex h-screen justify-center">
 		<div class="flex flex-col justify-center">
 			<div class="group relative mx-auto">
 				<div
@@ -47,10 +47,10 @@
 				</p>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!-- About -->
-	<div
+	<section
 		class="mx-auto flex w-[80%] grid-cols-2 flex-col-reverse gap-16 py-8 md:grid md:gap-0"
 		id="about"
 	>
@@ -74,10 +74,10 @@
 			<img src={me} alt="me:)" loading="lazy" class="card relative m-auto w-full 2xl:w-1/2" />
 			<span></span></span
 		>
-	</div>
+	</section>
 
 	<!-- Information -->
-	<div
+	<section
 		id="information"
 		class="grid-row-3 mx-auto flex w-[80%] grid-cols-3 flex-col gap-8 py-8 md:grid"
 	>
@@ -158,9 +158,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<!-- Timeline -->
-	<div class="my-16">
+	<section class="my-16">
 		<div class="my-8 text-center">
 			<h1 class="h1 font-black">Timeline</h1>
 			<h4 class="h4 font-semibold italic">Key moments</h4>
@@ -168,5 +168,5 @@
 		<div class="card mx-auto w-[80%] p-8 md:w-[60%]">
 			<Timeline />
 		</div>
-	</div>
+	</section>
 </main>
