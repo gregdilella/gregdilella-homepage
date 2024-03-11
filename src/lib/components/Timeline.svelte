@@ -52,13 +52,13 @@
 	</Step>
 	<Step>
 		<svelte:fragment slot="header">Fall 2023</svelte:fragment>
-		Discovered SvelteKit and built some first applications with it.
+		Discovered SvelteKit and built some first applications with it. This made me pick up on web dev again
+		and made me a full stack dev. I rebuilt
+		<a href="https://wolffebricks.store" class="anchor">Wolffe Bricks</a> with it and loved the DX.
 	</Step>
 	<Step>
 		<svelte:fragment slot="header">Early 2024</svelte:fragment>
-		Rocking my first Full Stack Projects. You can discover these on the
-		<a href="/work" class="anchor">Work</a> page. I learned Astro for more content-driven and static
-		pages like landing pages. I also began my
+		I learned Astro for more content-driven and static pages like landing pages. I also began my
 		<a href="https://youtube.com/@nevillebrem" target="_blank" class="anchor">YouTube channel</a>.
 	</Step>
 </Stepper>

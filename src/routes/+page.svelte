@@ -110,7 +110,7 @@
 				>
 					Why me?
 				</h1>
-				<ul class="list-inside list-decimal text-lg font-semibold md:text-2xl">
+				<ul class="list-inside list-decimal text-lg font-semibold md:text-xl">
 					<li>Beautifully crafted Websites</li>
 					<li>Modern Design</li>
 					<li>Keen eye on detail</li>
@@ -120,7 +120,7 @@
 		</div>
 		<div class="bento-box bg-gradient-to-b from-white/25 to-orange-500/25">
 			<h1 class="bento-heading text-4xl md:text-6xl">Stack:</h1>
-			<ul class="text-md list-inside list-disc text-left font-bold">
+			<ul class="text-md list-inside list-disc text-left text-lg font-bold md:text-xl">
 				<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
 				<li><a href="https://astro.build" target="_blank">Astro</a></li>
 				<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
