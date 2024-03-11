@@ -57,7 +57,8 @@
 	<Step>
 		<svelte:fragment slot="header">Early 2024</svelte:fragment>
 		Rocking my first Full Stack Projects. You can discover these on the
-		<a href="/work" class="anchor">Work</a> page. I als learned Astro for more content-driven and static
-		pages like landing pages.
+		<a href="/work" class="anchor">Work</a> page. I learned Astro for more content-driven and static
+		pages like landing pages. I also began my
+		<a href="https://youtube.com/@nevillebrem" target="_blank" class="anchor">YouTube channel</a>.
 	</Step>
 </Stepper>
