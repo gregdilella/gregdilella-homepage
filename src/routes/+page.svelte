@@ -20,14 +20,9 @@
 <main class="2xl:mx-auto 2xl:max-w-[70%]">
 	<section class="flex h-screen justify-center">
 		<div class="flex flex-col justify-center">
-			<div class="group relative mx-auto">
-				<div
-					class="absolute inset-0 rounded-full bg-primary-500 opacity-50 blur-2xl duration-500 ease-in-out group-hover:opacity-75"
-				></div>
-				<h1 class="relative mx-auto text-center text-7xl font-black font-heading-token md:text-8xl">
-					Neville Brem
-				</h1>
-			</div>
+			<h1 class="mx-auto text-center text-7xl font-black font-heading-token md:text-8xl">
+				Neville Brem
+			</h1>
 			<h3 class="h3 mx-auto pt-4 font-semibold italic">
 				Bringing <span
 					class="font-extrabold text-primary-500 duration-200 ease-in-out hover:tracking-widest hover:text-green-500"
