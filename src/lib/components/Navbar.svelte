@@ -45,7 +45,7 @@
 			><i class="fa-solid fa-house m-auto"></i>
 		</RadioItem>
 		<div
-			class="pointer-events-none absolute left-16 translate-y-[70%] font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
+			class="pointer-events-none absolute left-16 translate-y-1/2 font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
 		>
 			Home
 		</div>
@@ -59,7 +59,7 @@
 			><i class="fa-solid fa-suitcase m-auto"></i></RadioItem
 		>
 		<div
-			class="pointer-events-none absolute left-16 translate-y-[70%] font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
+			class="pointer-events-none absolute left-16 translate-y-1/2 font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
 		>
 			Work
 		</div>
@@ -73,7 +73,7 @@
 			><i class="fa-solid fa-address-book m-auto"></i>
 		</RadioItem>
 		<div
-			class="pointer-events-none absolute left-16 translate-y-[70%] font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
+			class="pointer-events-none absolute left-16 translate-y-1/2 font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
 		>
 			Contact
 		</div>
