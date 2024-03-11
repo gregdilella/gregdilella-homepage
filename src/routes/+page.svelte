@@ -41,7 +41,7 @@
 					>Explore</a
 				>
 				<p
-					class="mt-2 text-center text-lg font-bold opacity-0 duration-200 ease-in-out group-hover:opacity-100"
+					class="pointer-events-none mt-2 text-center text-lg font-bold opacity-0 duration-200 ease-in-out group-hover:opacity-100"
 				>
 					Curious?
 				</p>
