@@ -7,13 +7,13 @@
 	<title>Neville Brem - Home</title>
 	<meta name="description" content="The Homepage of Neville Brem" />
 	<meta property="og:title" content="Neville Brem" />
-	<meta property="og:image" content="favicon.png" />
+	<meta property="og:image" content="banner.png" />
 	<meta property="og:description" content="Homepage of Neville Brem" />
 	<meta property="og:url" content="https://www.nevillebrem.com" />
 	<meta property="twitter:description" content="Homepage of Neville Brem" />
 	<meta property="twitter:title" content="Neville Brem" />
-	<meta property="twitter:image" content="favicon.png" />
-	<meta name="twitter:card" content="summary" />
+	<meta property="twitter:image" content="banner.png" />
+	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@BremNeville" />
 </svelte:head>
 
