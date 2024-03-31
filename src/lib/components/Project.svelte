@@ -19,12 +19,16 @@
 	</div>
 	<div>
 		<div class="flex gap-4">
-			<button class="link-icon" disabled={!project.link}>
-				<a href={project.link} target="_blank"><i class="fa-solid fa-globe text-2xl"></i></a>
-			</button>
-			<button class="link-icon">
-				<a href={project.gHlink} target="_blank"><i class="fa-brands fa-github text-2xl"></i></a>
-			</button>
+			<a href={project.link} target="_blank">
+				<button class="link-icon" disabled={!project.link}>
+					<i class="fa-solid fa-globe text-2xl"></i>
+				</button>
+			</a>
+			<a href={project.gHlink} target="_blank">
+				<button class="link-icon">
+					<i class="fa-brands fa-github text-2xl"></i>
+				</button>
+			</a>
 		</div>
 	</div>
 </div>
