@@ -13,7 +13,7 @@
 			name: 'Webglacier',
 			desc: 'The agency website I built to test out SvelteKit.',
 			tech: ['SvelteKit*', 'TailwindCSS'],
-			link: 'https://webglacier.netlify.app',
+			link: null,
 			gHlink: 'https://github.com/nevthereal/webglacier'
 		},
 		{

@@ -11,7 +11,7 @@ declare namespace App {
 declare interface TProject {
 	name: string;
 	desc: string;
-	link: string;
+	link: string | null;
 	gHlink: string;
 	tech: string[];
 }
