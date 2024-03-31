@@ -17,7 +17,8 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
 			images: {
-				formats: ['image/webp']
+				formats: ['image/webp'],
+				sizes: [640, 1200]
 			}
 		})
 	}
