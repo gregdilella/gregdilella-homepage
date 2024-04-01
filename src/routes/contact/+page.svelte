@@ -8,6 +8,27 @@
 		resetForm: true,
 		delayMs: 0
 	});
+
+	const badgeProps = [
+		{
+			link: 'https://youtube.com/@nevillebrem',
+			title: 'YouTube',
+			body: 'See code breakdowns and other videos around coding here',
+			icon: 'fa-brands fa-youtube'
+		},
+		{
+			link: 'https://x.com/BremNeville',
+			title: 'Twitter',
+			body: 'I use x, btw',
+			icon: 'fa-brands fa-x-twitter'
+		},
+		{
+			link: 'https://instagram.com/nevillebrem',
+			title: 'Instagram',
+			body: 'I occasionally post some nice pics',
+			icon: 'fa-brands fa-instagram'
+		}
+	];
 </script>
 
 <main class="mx-8 md:mx-auto md:max-w-[50%]">
@@ -21,24 +42,9 @@
 	<div class="my-8">
 		<h2 class="h2 mb-4 font-bold">Check out my socials</h2>
 		<div class="grid grid-rows-3 gap-4 xl:grid-cols-3 xl:grid-rows-1">
-			<ContactBadge
-				link="https://instagram.com/nevillebrem"
-				title="Instagram"
-				body="I occasinally post some nice pics"
-				icon="fa-brands fa-instagram"
-			/>
-			<ContactBadge
-				link="https://youtube.com/@nevillebrem"
-				title="YouTube"
-				body="See code breakdowns and other videos around coding here"
-				icon="fa-brands fa-youtube"
-			/>
-			<ContactBadge
-				link="https://x.com/BremNeville"
-				title="Twitter"
-				body="I use x, btw"
-				icon="fa-brands fa-x-twitter"
-			/>
+			{#each badgeProps as props}
+				<ContactBadge link={props.link} title={props.title} body={props.body} icon={props.icon} />
+			{/each}
 		</div>
 	</div>
 
