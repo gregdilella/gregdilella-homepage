@@ -13,14 +13,14 @@
 			name: 'Webglacier',
 			desc: 'The agency website I built to test out SvelteKit.',
 			tech: ['SvelteKit*', 'TailwindCSS'],
-			link: 'https://webglacier.vercel.app',
+			link: 'https://webglacier.nevillebrem.com',
 			gHlink: 'https://github.com/nevthereal/webglacier'
 		},
 		{
 			name: 'Codoodle',
 			desc: 'A Blog built with SvelteKit and the most bleeding edge tech.',
 			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
-			link: null,
+			link: 'https://codoodle.nevillebrem.com',
 			gHlink: 'https://github.com/nevthereal/codoodle'
 		},
 		{
