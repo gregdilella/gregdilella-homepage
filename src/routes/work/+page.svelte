@@ -49,7 +49,7 @@
 			These are the few I've published, you can find all of my projects on
 			<a href="https://github.com/nevthereal" class="anchor" target="_blank">GitHub</a>.
 		</p>
-		<div class="my-16 flex flex-col gap-8 xl:grid xl:grid-cols-3">
+		<div class="my-16 flex grid-cols-2 flex-col gap-8 xl:grid">
 			{#each projects as project}
 				<Project {project} />
 			{/each}
