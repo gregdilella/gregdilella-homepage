@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { superValidate, setMessage } from 'sveltekit-superforms/server';
 import { fail } from '@sveltejs/kit';
 import { EMAILJS_KEY } from '$env/static/private';
+import { RateLimiter } from 'sveltekit-rate-limiter/server';
 
 const formSchema = z
 	.object({
@@ -17,10 +18,17 @@ export const load = async () => {
 	return { form };
 };
 
+const limiter = new RateLimiter({
+	IP: [5, 'h'],
+	IPUA: [10, 'h']
+});
+
 export const actions = {
-	default: async ({ request }) => {
-		const form = await superValidate(request, formSchema);
+	default: async (e) => {
+		const form = await superValidate(e.request, formSchema);
 		if (!form.valid) return fail(400, { form });
+		if (await limiter.isLimited(e))
+			return setMessage(form, 'You sent too many requests. Please try again later');
 
 		const data = {
 			service_id: 'service_m5dhn7u',
