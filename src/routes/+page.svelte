@@ -1,5 +1,5 @@
 <script lang="ts">
-	import me from '$lib/assets/me.jpg';
+	import me from '$lib/assets/me.jpg?enhanced';
 	import Timeline from '$lib/components/Timeline.svelte';
 </script>
 
@@ -66,7 +66,12 @@
 		<span
 			class="relative inline-block before:card before:variant-ghost-primary before:absolute before:-inset-1 before:m-auto before:block before:w-full before:translate-x-4 before:translate-y-4 2xl:before:w-1/2"
 		>
-			<img src={me} alt="me:)" loading="lazy" class="card relative m-auto w-full 2xl:w-1/2" />
+			<enhanced:img
+				src={me}
+				alt="me:)"
+				loading="lazy"
+				class="card relative m-auto w-full 2xl:w-1/2"
+			/>
 			<span></span></span
 		>
 	</section>
