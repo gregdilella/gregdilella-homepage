@@ -1,6 +1,7 @@
 <script lang="ts">
 	import me from '$lib/assets/me.jpg?enhanced';
 	import Timeline from '$lib/components/Timeline.svelte';
+	import { gsap } from 'gsap';
 </script>
 
 <svelte:head>
