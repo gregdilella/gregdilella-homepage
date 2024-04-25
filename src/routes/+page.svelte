@@ -2,6 +2,10 @@
 	import me from '$lib/assets/me.jpg?enhanced';
 	import Timeline from '$lib/components/Timeline.svelte';
 	import { gsap } from 'gsap';
+	import { onMount } from 'svelte';
+	onMount(() => {
+		gsap.to('#explore-btn', { rotation: 0, duration: 0.1, opacity: 1, scale: 1, ease: 'expo' });
+	});
 </script>
 
 <svelte:head>
@@ -33,7 +37,8 @@
 			<div class="group mx-auto mt-6">
 				<a
 					href="#about"
-					class="text-md btn border-b-4 border-white bg-primary-500 p-4 font-bold duration-200 ease-in-out hover:border-primary-500 hover:bg-white hover:text-primary-500 active:border-none"
+					id="explore-btn"
+					class="text-md btn rotate-45 scale-75 border-b-4 border-white bg-primary-500 p-4 font-bold opacity-0 duration-200 ease-in-out hover:border-primary-500 hover:bg-white hover:text-primary-500 active:border-none"
 					>Explore</a
 				>
 				<p
@@ -53,14 +58,12 @@
 		<div class="flex items-center justify-center">
 			<div class="md:max-w-[75%]">
 				<h1 class="h1 font-black">About me</h1>
-				<p class="mt-2">
+				<p class="mt-2 text-balance">
 					Hey there, my name is Neville Brem and I am a Web Developer from Zurich, Switzerland. I
 					love coding, computer science and everything to do with tech. I am 16 years old and visit
-					the Mathematical Scientific High School of Zurich.
-				</p>
-				<p>
-					I began my coding journey in 2021. Since then I've been fascinated with web development
-					and learned many technologies around it.
+					the Mathematical Scientific High School of Zurich. I began my coding journey in 2021.
+					Since then I've been fascinated with web development and learned many technologies around
+					it.
 				</p>
 			</div>
 		</div>
@@ -71,10 +74,9 @@
 				src={me}
 				alt="me:)"
 				loading="lazy"
-				class="card relative m-auto w-full 2xl:w-1/2"
+				class="card relative m-auto w-full duration-200 ease-in-out hover:scale-110 2xl:w-1/2"
 			/>
-			<span></span></span
-		>
+		</span>
 	</section>
 
 	<!-- Information -->
