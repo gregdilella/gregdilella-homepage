@@ -4,17 +4,17 @@
 	const projects: TProject[] = [
 		{
 			name: 'Wolffe Bricks',
-			desc: 'This is an ecommerce app I built for me and a friend.',
+			desc: 'An ecommerce app I built for me and a friend to sell PDF toy instructions.',
 			tech: ['SvelteKit*', 'TailwindCSS', 'Stripe'],
 			link: 'https://wolffebricks.store',
 			gHlink: 'https://github.com/nevthereal/wolffebricks-svelte'
 		},
 		{
-			name: 'Webglacier',
-			desc: 'The agency website I built to test out SvelteKit.',
-			tech: ['SvelteKit*', 'TailwindCSS'],
-			link: 'https://webglacier.nevillebrem.com',
-			gHlink: 'https://github.com/nevthereal/webglacier'
+			name: 'Lapland Course Event Page',
+			desc: 'Landing page for an event of the finnish Association of Spinal Surgeons',
+			tech: ['Astro', 'TailwindCSS', 'React'],
+			link: 'https://lapin-kurssi-2024.vercel.app/',
+			gHlink: null
 		},
 		{
 			name: 'Codoodle',
@@ -25,10 +25,17 @@
 		},
 		{
 			name: 'BarMates Homepage',
-			desc: 'A landing page for a sports nutrition business',
+			desc: 'A landing page for our sports nutrition business',
 			tech: ['Astro', 'TailwindCSS', 'Svelte', 'daisy UI'],
 			link: 'https://barmates.ch',
 			gHlink: 'https://github.com/nevthereal/barmates-landing'
+		},
+		{
+			name: 'Webglacier',
+			desc: 'The agency website I built to test out SvelteKit.',
+			tech: ['SvelteKit*', 'TailwindCSS'],
+			link: 'https://webglacier.nevillebrem.com',
+			gHlink: 'https://github.com/nevthereal/webglacier'
 		}
 	];
 </script>

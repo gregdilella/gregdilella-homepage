@@ -12,6 +12,6 @@ declare interface TProject {
 	name: string;
 	desc: string;
 	link: string | null;
-	gHlink: string;
+	gHlink: string | null;
 	tech: string[];
 }

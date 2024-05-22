@@ -37,7 +37,11 @@
 				</button>
 			</a>
 			<a href={project.gHlink} target="_blank">
-				<button class="link-icon duration-200 ease-in-out hover:text-purple-500" id="ghbadge">
+				<button
+					class="link-icon duration-200 ease-in-out hover:text-tertiary-500"
+					id="ghbadge"
+					disabled={!project.gHlink}
+				>
 					<i class="fa-brands fa-github text-2xl"></i>
 				</button>
 			</a>
