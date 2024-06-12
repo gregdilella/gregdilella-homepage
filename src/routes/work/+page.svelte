@@ -18,7 +18,7 @@
 		},
 		{
 			name: 'Codoodle',
-			desc: 'A Blog built with SvelteKit and the most bleeding edge tech.',
+			desc: 'A "social media app" built with SvelteKit and some other modern technologies. This project taught me a lot of backend concepts like auth and databases.',
 			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
 			link: 'https://codoodle.nevillebrem.com',
 			gHlink: 'https://github.com/nevthereal/codoodle'
