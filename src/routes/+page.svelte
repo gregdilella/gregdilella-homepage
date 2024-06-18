@@ -128,6 +128,7 @@
 				<li><a href="https://astro.build" target="_blank">Astro</a></li>
 				<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
 				<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
+				<li><a href="https://lucia-auth.com">Lucia</a></li>
 				<li><a href="https://neon.tech" target="_blank">Neon</a></li>
 				<li>GitHub</li>
 			</ul>
