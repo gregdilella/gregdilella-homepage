@@ -9,7 +9,9 @@
 	} from '@skeletonlabs/skeleton';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { inject } from '@vercel/analytics';
 
+	inject();
 	initializeStores();
 
 	const drawerStore = getDrawerStore();
