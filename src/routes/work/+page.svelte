@@ -45,8 +45,7 @@
 			<h4 class="h4 font-semibold italic">Selection of projects</h4>
 		</div>
 		<p>
-			I've worked on a couple different projects. <br />
-			These are the few I've published, you can find all of my projects on
+			This page only features some of my projects, but you can find all of them on
 			<a href="https://github.com/nevthereal" class="anchor" target="_blank">GitHub</a> or on my
 			<a href="https://links.nevillebrem.com" class="anchor" target="_blank">linktree</a>.
 		</p>
