@@ -1,12 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-
-	onMount(() => {
-		gsap.to('#linkbadge', { opacity: 1, scale: 1, duration: 0.25, ease: 'expo' });
-		gsap.to('#ghbadge', { opacity: 1, scale: 1, duration: 0.25, ease: 'expo', delay: 0.1 });
-	});
-
 	export let project: TProject;
 </script>
 
@@ -30,7 +22,6 @@
 			<a href={project.link} target="_blank">
 				<button
 					class="link-icon duration-200 ease-in-out hover:text-primary-500"
-					id="linkbadge"
 					disabled={!project.link}
 				>
 					<i class="fa-solid fa-globe text-2xl"></i>
@@ -39,7 +30,6 @@
 			<a href={project.gHlink} target="_blank">
 				<button
 					class="link-icon duration-200 ease-in-out hover:text-tertiary-500"
-					id="ghbadge"
 					disabled={!project.gHlink}
 				>
 					<i class="fa-brands fa-github text-2xl"></i>

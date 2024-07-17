@@ -53,6 +53,7 @@
     "@floating-ui/dom": "1.5.3",
     "@sveltejs/enhanced-img": "^0.2.0",
     "gsap": "^3.12.5",
-    "highlight.js": "11.9.0"
+    "highlight.js": "11.9.0",
+    "lucide-svelte": "^0.408.0"
   }
 }

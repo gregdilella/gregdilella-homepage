@@ -1,3 +1,5 @@
+import type { ComponentType } from 'svelte';
+import type { Icon } from 'lucide-svelte';
 // See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
 // and what to do when importing types
@@ -8,10 +10,21 @@ declare namespace App {
 	// interface Platform {}
 }
 
-declare interface TProject {
-	name: string;
-	desc: string;
-	link: string | null;
-	gHlink: string | null;
-	tech: string[];
+declare global {
+	interface TProject {
+		name: string;
+		desc: string;
+		link: string | null;
+		gHlink: string | null;
+		tech: string[];
+	}
+
+	interface BadgeProps {
+		link: string;
+		title: string;
+		body: string;
+		icon: string;
+	}
 }
+
+export {};

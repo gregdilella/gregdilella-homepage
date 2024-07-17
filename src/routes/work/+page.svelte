@@ -11,7 +11,7 @@
 		},
 		{
 			name: 'Lapland Course Event Page',
-			desc: 'Landing page for an event of the finnish Association of Spinal Surgeons',
+			desc: 'Landing page for an event of the finnish Association of Spinal Surgeons.',
 			tech: ['Astro', 'TailwindCSS', 'React'],
 			link: 'https://lapin-kurssi-2024.vercel.app/',
 			gHlink: null
@@ -25,15 +25,15 @@
 		},
 		{
 			name: 'BarMates Homepage',
-			desc: 'A landing page for our sports nutrition business',
+			desc: 'A landing page for our sports nutrition business.',
 			tech: ['Astro', 'TailwindCSS', 'Svelte', 'daisy UI'],
 			link: 'https://barmates.ch',
 			gHlink: 'https://github.com/nevthereal/barmates-landing'
 		},
 		{
-			name: 'Webglacier',
-			desc: 'The agency website I built to test out SvelteKit.',
-			tech: ['SvelteKit*', 'TailwindCSS'],
+			name: 'Photography Page',
+			desc: "Since I do photography for fun, this page was created. It is a gallery of my favorite pictures. It also features a blog, powered by Astro's Content Collections",
+			tech: ['Astro', 'TailwindCSS', 'daisyui'],
 			link: 'https://webglacier.nevillebrem.com',
 			gHlink: 'https://github.com/nevthereal/webglacier'
 		}

@@ -8,6 +8,7 @@
 		initializeStores
 	} from '@skeletonlabs/skeleton';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	initializeStores();
 
@@ -32,19 +33,6 @@
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="footer">
-		<footer class="text-center p-8 md:w-[50%] mx-auto">
-			<h1 class="font-bold font-heading-token">© Neville Brem 2024</h1>
-			<div class="flex gap-2 justify-center pt-4">
-				<a class="btn" href="https://github.com/nevthereal" target="_blank"
-					><i class="fa-brands fa-github text-2xl"></i></a
-				>
-				<a class="btn" href="https://twitter.com/bremneville" target="_blank"
-					><i class="fa-brands fa-x-twitter text-2xl"></i></a
-				>
-				<a class="btn" href="mailto:contact@nevillebrem.com"
-					><i class="fa-solid fa-envelope text-2xl"></i></a
-				>
-			</div>
-		</footer>
+		<Footer />
 	</svelte:fragment>
 </AppShell>

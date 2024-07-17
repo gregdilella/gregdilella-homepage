@@ -6,6 +6,8 @@
 		type: 'confirm',
 		title: 'That was my story!',
 		body: 'Want to see my Projects?',
+		buttonTextConfirm: 'Yes',
+		buttonTextCancel: "No, I'd rather stay here",
 		response: (e) => {
 			if (e) {
 				goto('/work');

@@ -1,11 +1,6 @@
 <script lang="ts">
 	import me from '$lib/assets/me.jpg?enhanced';
 	import Timeline from '$lib/components/Timeline.svelte';
-	import { gsap } from 'gsap';
-	import { onMount } from 'svelte';
-	onMount(() => {
-		gsap.to('#explore-btn', { rotation: 0, duration: 0.1, opacity: 1, scale: 1, ease: 'expo' });
-	});
 </script>
 
 <svelte:head>
@@ -28,25 +23,23 @@
 			<h1 class="mx-auto text-center text-7xl font-black font-heading-token md:text-8xl">
 				Neville Brem
 			</h1>
-			<h3 class="h3 mx-auto pt-4 font-semibold italic">
+			<h3 class="h3 mx-auto mt-4 font-semibold italic">
 				Bringing <span
 					class="font-extrabold text-primary-500 duration-200 ease-in-out hover:tracking-widest hover:text-green-500"
 					>life</span
 				> to every page
 			</h3>
-			<div class="group mx-auto mt-6">
-				<a
-					href="#about"
-					id="explore-btn"
-					class="text-md btn rotate-45 scale-75 border-b-4 border-white bg-primary-500 p-4 font-bold opacity-0 duration-200 ease-in-out hover:border-primary-500 hover:bg-white hover:text-primary-500 active:border-none"
-					>Explore</a
-				>
-				<p
-					class="pointer-events-none mt-2 text-center text-lg font-bold opacity-0 duration-200 ease-in-out group-hover:opacity-100"
-				>
-					Curious?
-				</p>
-			</div>
+			<a
+				href="#about"
+				id="explore-btn"
+				class="text-md peer btn mx-auto mt-4 border-b-4 border-white bg-primary-500 p-4 font-bold duration-200 ease-in-out hover:border-primary-500 hover:bg-white hover:text-primary-500 active:border-none"
+				>Explore</a
+			>
+			<p
+				class="pointer-events-none mt-2 text-center text-lg font-bold opacity-0 duration-200 ease-in-out peer-hover:opacity-100"
+			>
+				Curious?
+			</p>
 		</div>
 	</section>
 
@@ -67,16 +60,12 @@
 				</p>
 			</div>
 		</div>
-		<span
-			class="relative inline-block before:card before:variant-ghost-primary before:absolute before:-inset-1 before:m-auto before:block before:w-full before:translate-x-4 before:translate-y-4 2xl:before:w-1/2"
-		>
-			<enhanced:img
-				src={me}
-				alt="me:)"
-				loading="lazy"
-				class="card relative m-auto w-full duration-200 ease-in-out hover:scale-110 2xl:w-1/2"
-			/>
-		</span>
+		<enhanced:img
+			src={me}
+			alt="me:)"
+			loading="lazy"
+			class="card relative m-auto w-full 2xl:w-1/2"
+		/>
 	</section>
 
 	<!-- Information -->
@@ -126,11 +115,10 @@
 			<ul class="text-md list-inside list-disc text-left text-lg font-bold md:text-xl">
 				<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
 				<li><a href="https://astro.build" target="_blank">Astro</a></li>
-				<li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
-				<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
-				<li><a href="https://lucia-auth.com">Lucia</a></li>
+				<li><a href="https://tailwindcss.com" target="_blank">Tailwind</a></li>
+				<li><a href="https://orm.drizzle.team" target="_blank">Drizzle</a></li>
 				<li><a href="https://neon.tech" target="_blank">Neon</a></li>
-				<li>GitHub</li>
+				<li><a href="https://lucia-auth.com">Lucia</a></li>
 			</ul>
 		</div>
 		<div class="col-span-3 flex grid-cols-2 flex-col gap-8 md:grid">
