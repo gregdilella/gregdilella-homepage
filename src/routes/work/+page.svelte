@@ -3,6 +3,13 @@
 
 	const projects: TProject[] = [
 		{
+			name: 'Codoodle',
+			desc: 'A "social media app" built with SvelteKit and some other modern technologies. This project taught me a lot of backend concepts like auth and databases.',
+			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
+			link: 'https://codoodle.nevillebrem.com',
+			gHlink: 'https://github.com/nevthereal/codoodle'
+		},
+		{
 			name: 'Wolffe Bricks',
 			desc: 'An ecommerce app I built for me and a friend to sell PDF toy instructions.',
 			tech: ['SvelteKit*', 'TailwindCSS', 'Stripe'],
@@ -17,25 +24,11 @@
 			gHlink: null
 		},
 		{
-			name: 'Codoodle',
-			desc: 'A "social media app" built with SvelteKit and some other modern technologies. This project taught me a lot of backend concepts like auth and databases.',
-			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
-			link: 'https://codoodle.nevillebrem.com',
-			gHlink: 'https://github.com/nevthereal/codoodle'
-		},
-		{
 			name: 'BarMates Homepage',
 			desc: 'A landing page for our sports nutrition business.',
 			tech: ['Astro', 'TailwindCSS', 'Svelte', 'daisy UI'],
 			link: 'https://barmates.ch',
 			gHlink: 'https://github.com/nevthereal/barmates-landing'
-		},
-		{
-			name: 'Photography Page',
-			desc: "Since I do photography for fun, this page was created. It is a gallery of my favorite pictures. It also features a blog, powered by Astro's Content Collections",
-			tech: ['Astro', 'TailwindCSS', 'daisyui'],
-			link: 'https://webglacier.nevillebrem.com',
-			gHlink: 'https://github.com/nevthereal/webglacier'
 		}
 	];
 </script>
@@ -45,7 +38,7 @@
 	<meta name="description" content="Projects of Neville Brem" />
 </svelte:head>
 
-<main class="mx-8 md:mx-auto md:w-[60%]">
+<main class="">
 	<div class="text-center">
 		<div class="my-16">
 			<h1 class="text-7xl font-black font-heading-token">Work</h1>
@@ -54,7 +47,8 @@
 		<p>
 			I've worked on a couple different projects. <br />
 			These are the few I've published, you can find all of my projects on
-			<a href="https://github.com/nevthereal" class="anchor" target="_blank">GitHub</a>.
+			<a href="https://github.com/nevthereal" class="anchor" target="_blank">GitHub</a> or on my
+			<a href="https://links.nevillebrem.com" class="anchor" target="_blank">linktree</a>.
 		</p>
 		<div class="my-16 flex grid-cols-2 flex-col gap-8 xl:grid">
 			{#each projects as project}

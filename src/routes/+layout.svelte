@@ -33,7 +33,9 @@
 	<svelte:fragment slot="sidebarLeft">
 		<Navbar />
 	</svelte:fragment>
-	<slot />
+	<main class="mx-8 md:mx-auto md:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[60%]">
+		<slot />
+	</main>
 	<svelte:fragment slot="footer">
 		<Footer />
 	</svelte:fragment>

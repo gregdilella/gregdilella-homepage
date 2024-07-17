@@ -24,25 +24,23 @@
 	];
 </script>
 
-<main class="mx-8 md:mx-auto md:max-w-[50%]">
-	<div class="text-center">
-		<div class="my-16">
-			<h1 class="text-7xl font-black font-heading-token">Contact</h1>
-			<h4 class="h4 font-semibold italic">Where to find me</h4>
-		</div>
+<div class="text-center">
+	<div class="my-16">
+		<h1 class="text-7xl font-black font-heading-token">Contact</h1>
+		<h4 class="h4 font-semibold italic">Where to find me</h4>
 	</div>
+</div>
 
-	<div class="my-8">
-		<h2 class="h2 mb-4 font-bold">Check out my socials</h2>
-		<div class="grid grid-rows-3 gap-4 xl:grid-cols-3 xl:grid-rows-1">
-			{#each badgeProps as props}
-				<ContactBadge {props} />
-			{/each}
-		</div>
+<div class="my-8">
+	<h2 class="h2 mb-4 font-bold">Check out my socials</h2>
+	<div class="grid grid-rows-3 gap-4 xl:grid-cols-3 xl:grid-rows-1">
+		{#each badgeProps as props}
+			<ContactBadge {props} />
+		{/each}
 	</div>
-	<p class="text-center font-medium">
-		Or directly reach out to me via email: <a class="anchor" href="mailto:contact@nevillebrem.com"
-			>contact@nevillebrem.com</a
-		>
-	</p>
-</main>
+</div>
+<p class="text-center font-medium">
+	Or directly reach out to me via email: <a class="anchor" href="mailto:contact@nevillebrem.com"
+		>contact@nevillebrem.com</a
+	>
+</p>

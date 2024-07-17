@@ -18,7 +18,7 @@ const config = {
 		adapter: adapter({
 			images: {
 				formats: ['image/webp'],
-				sizes: [640, 750, 828, 1080, 1200, 1920]
+				sizes: [640, 1200]
 			}
 		})
 	}
