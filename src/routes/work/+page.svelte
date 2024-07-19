@@ -3,6 +3,21 @@
 
 	const projects: TProject[] = [
 		{
+			name: 'Zenith',
+			desc: 'AI-powered planning. An LLM converts natural language input to an Event object. No need for complex UIs and other hurdles. Probably my most complex app yet.',
+			tech: [
+				'SvelteKit',
+				'TailwindCSS',
+				'Drizzle ORM',
+				'Neon',
+				'Lucia auth',
+				'Stripe',
+				'Upstash Rate Limiter'
+			],
+			link: 'https://zenithproductivity.app',
+			gHlink: 'https://github.com/nevthereal/zenith'
+		},
+		{
 			name: 'Codoodle',
 			desc: 'A "social media app" built with SvelteKit and some other modern technologies. This project taught me a lot of backend concepts like auth and databases.',
 			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
