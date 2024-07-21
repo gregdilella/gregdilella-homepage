@@ -1,6 +1,5 @@
 <script lang="ts">
 	import ContactBadge from '$lib/components/ContactBadge.svelte';
-	import { Bird, Handshake, Play } from 'lucide-svelte';
 
 	const badgeProps: BadgeProps[] = [
 		{

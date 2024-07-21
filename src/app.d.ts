@@ -1,5 +1,3 @@
-import type { ComponentType } from 'svelte';
-import type { Icon } from 'lucide-svelte';
 // See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
 // and what to do when importing types
