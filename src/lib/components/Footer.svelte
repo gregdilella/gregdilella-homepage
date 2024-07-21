@@ -28,8 +28,8 @@
 			</li>
 		</ul>
 	</div>
-	<h1 class="font-bold font-heading-token">© Neville Brem 2024</h1>
-	<div class="mt-4 flex justify-center gap-2">
+	<h1 class="my-4 font-bold font-heading-token">© Neville Brem 2024</h1>
+	<div class="flex justify-center gap-2">
 		<a class="btn" href="https://github.com/nevthereal" target="_blank"
 			><i class="fa-brands fa-github text-2xl"></i></a
 		>

@@ -4,10 +4,11 @@
 	const projects: TProject[] = [
 		{
 			name: 'Zenith',
-			desc: 'AI-powered planning. An LLM converts natural language input to an Event object. No need for complex UIs and other hurdles. Probably my most complex app yet.',
+			desc: 'An App that converts natural language input into usable events or tasks. I intended to work against using complex UIs.',
 			tech: [
 				'SvelteKit',
-				'TailwindCSS',
+				'TailwindCSS & daisyUI',
+				'Vercel AI SDK',
 				'Drizzle ORM',
 				'Neon',
 				'Lucia auth',
@@ -20,14 +21,14 @@
 		{
 			name: 'Codoodle',
 			desc: 'A "social media app" built with SvelteKit and some other modern technologies. This project taught me a lot of backend concepts like auth and databases.',
-			tech: ['SvelteKit*', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
+			tech: ['SvelteKit', 'Skeleton UI', 'TailwindCSS', 'Drizzle ORM', 'Turso', 'Lucia auth'],
 			link: 'https://codoodle.nevillebrem.com',
 			gHlink: 'https://github.com/nevthereal/codoodle'
 		},
 		{
 			name: 'Wolffe Bricks',
 			desc: 'An ecommerce app I built for me and a friend to sell PDF toy instructions.',
-			tech: ['SvelteKit*', 'TailwindCSS', 'Stripe'],
+			tech: ['SvelteKit', 'Skeleton UI', 'TailwindCSS', 'Stripe'],
 			link: 'https://wolffebricks.store',
 			gHlink: 'https://github.com/nevthereal/wolffebricks-svelte'
 		},
@@ -41,7 +42,7 @@
 		{
 			name: 'BarMates Homepage',
 			desc: 'A landing page for our sports nutrition business.',
-			tech: ['Astro', 'TailwindCSS', 'Svelte', 'daisy UI'],
+			tech: ['Astro', 'TailwindCSS & daisyUI', 'Svelte'],
 			link: 'https://barmates.ch',
 			gHlink: 'https://github.com/nevthereal/barmates-landing'
 		}
@@ -69,12 +70,5 @@
 				<Project {project} />
 			{/each}
 		</div>
-		<p>
-			* These SvelteKit applications are built with <a
-				href="https://skeleton.dev"
-				class="anchor"
-				target="_blank">Skeleton UI</a
-			>
-		</p>
 	</div>
 </main>
