@@ -17,6 +17,7 @@
 	initializeStores();
 
 	const drawerStore = getDrawerStore();
+	export const prerender = true;
 </script>
 
 <Modal />
