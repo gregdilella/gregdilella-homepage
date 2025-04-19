@@ -10,7 +10,7 @@
 		buttonTextCancel: "No, I'd rather stay here",
 		response: (e) => {
 			if (e) {
-				goto('/work');
+				goto('/Projects');
 			}
 		}
 	};
@@ -24,43 +24,31 @@
 	on:complete={() => modalStore.trigger(completeModal)}
 >
 	<Step>
-		<svelte:fragment slot="header">Early 2022</svelte:fragment>
-		Learned HTML and CSS in School. This was my first contact with Web Development and would change my
-		life for the better.
+		<svelte:fragment slot="header">2011</svelte:fragment>
+		Graduated With a Degree in Electrical and Computer Engenieering.
 	</Step>
 	<Step>
-		<svelte:fragment slot="header">July 2022</svelte:fragment>
-		Discovered GitHub and created my first
-		<a href="https://github.com/nevthereal/TheCreators" target="_blank" class="anchor">Repository</a
-		>. I was still building in vanilla HTML and CSS (and rocked animations) but was too scared to
-		learn JavaScript.
+		<svelte:fragment slot="header">2018</svelte:fragment>
+		Finish MBA and Start Working For the Management Team at Global Logistics Company.
 	</Step>
 	<Step>
-		<svelte:fragment slot="header">Summer 2022</svelte:fragment>
-		Got into React and built my first
-		<a href="https://github.com/nevthereal/portfolio-react" target="_blank" class="anchor"
-			>Portfolio.</a
-		>
-		I also discovered Tailwind and began one of my most meaningful projects:
-		<a href="https://wolffebricks.store" target="_blank" class="anchor">Will's Brix</a>, now known
-		as Wolffe Bricks.
+		<svelte:fragment slot="header">2020</svelte:fragment>
+		Covid Hits and I Am Forced To Spend a Few Months at Home. Passed CFA level 1 and Began Coding Data Science Applications. 
 	</Step>
 	<Step>
-		<svelte:fragment slot="header">Summer 2023</svelte:fragment>
-		After a long break of coding, I got back into development. Rebranded Wolffe Bricks and rebuilt the
-		website with Stripe and built a backend in expressjs. Later I discovered TypeScript and built my
-		<a href="https://barmates.netlify.app" target="_blank" class="anchor">favorite landing page</a> utilising
-		framer-motion.
+		<svelte:fragment slot="header">2021</svelte:fragment>
+		Created an App to Interact with Comany Backend to Automate the Cost Input / Invoice Processing Department. 20 FTEs. 
 	</Step>
 	<Step>
-		<svelte:fragment slot="header">Fall 2023</svelte:fragment>
-		Discovered SvelteKit and built some first applications with it. This made me pick up on web dev again
-		and made me a full stack dev. I rebuilt
-		<a href="https://wolffebricks.store" class="anchor">Wolffe Bricks</a> with it and loved the DX.
+		<svelte:fragment slot="header">2023</svelte:fragment>
+		Created Billing Department Automation. 15 FTEs.
 	</Step>
 	<Step>
-		<svelte:fragment slot="header">Early 2024</svelte:fragment>
-		I learned Astro for more content-driven and static pages like landing pages. I also began my
-		<a href="https://youtube.com/@nevillebrem" target="_blank" class="anchor">YouTube channel</a>.
+		<svelte:fragment slot="header">2024</svelte:fragment>
+		Started Learning Typescript and Sveltekit in Order to Build Full Stack Web Applications.
+	</Step>
+	<Step>
+		<svelte:fragment slot="header">2025</svelte:fragment>
+		Started Hosting AI Agents In a Server To Sit On Top of Company Database and Automate Financial Backend Applications.
 	</Step>
 </Stepper>

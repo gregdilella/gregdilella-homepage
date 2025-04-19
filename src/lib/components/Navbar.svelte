@@ -10,9 +10,9 @@
 	let value: number = 0; // Activating the different elements in the Nav
 	$: if ($page.url.pathname === '/') {
 		value = 0;
-	} else if ($page.url.pathname === '/work') {
+	} else if ($page.url.pathname === '/Projects') {
 		value = 1;
-	} else if ($page.url.pathname === '/contact') {
+	} else if ($page.url.pathname === '/Contact') {
 		value = 2;
 	}
 
@@ -32,51 +32,37 @@
 </script>
 
 <RadioGroup
-	class="fixed left-6 top-1/2 hidden -translate-y-1/2 md:block"
-	flexDirection="flex-col"
-	gap="gap-2"
+	class="flex md:flex-col p-2 md:-translate-y-1/2 md:left-6 max-md:menu-xs bg-base-200 border-base-300 border-2 rounded-box fixed md:top-1/2 max-md:bottom-6 max-md:left-1/2 max-md:-translate-x-1/2 transform z-10"
 >
-	<a href="/" class="group relative flex justify-center">
+	<a href="/" class="flex justify-center">
 		<RadioItem
 			bind:group={value}
 			name="home"
 			value={0}
 			class="my-auto flex aspect-square justify-center rounded-full text-xl"
-			><i class="fa-solid fa-house m-auto"></i>
-		</RadioItem>
-		<div
-			class="pointer-events-none absolute left-16 translate-y-1/2 font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
 		>
-			Home
-		</div>
+			<i class="fa-solid fa-house m-auto"></i>
+		</RadioItem>
 	</a>
-	<a href="/work" class="group relative flex justify-center">
+	<a href="/Projects" class="flex justify-center">
 		<RadioItem
 			bind:group={value}
-			name="work"
+			name="Projects"
 			value={1}
 			class="my-auto flex aspect-square justify-center rounded-full text-xl"
-			><i class="fa-solid fa-suitcase m-auto"></i></RadioItem
 		>
-		<div
-			class="pointer-events-none absolute left-16 translate-y-1/2 font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
-		>
-			Work
-		</div>
+			<i class="fa-solid fa-suitcase m-auto"></i>
+		</RadioItem>
 	</a>
-	<a href="/contact" class="group relative flex justify-center">
+	<a href="/Contact" class="flex justify-center">
 		<RadioItem
 			bind:group={value}
-			name="contact"
+			name="Contact"
 			value={2}
 			class="my-auto flex aspect-square justify-center rounded-full text-xl"
-			><i class="fa-solid fa-address-book m-auto"></i>
-		</RadioItem>
-		<div
-			class="pointer-events-none absolute left-16 translate-y-1/2 font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100"
 		>
-			Contact
-		</div>
+			<i class="fa-solid fa-address-book m-auto"></i>
+		</RadioItem>
 	</a>
 </RadioGroup>
 
