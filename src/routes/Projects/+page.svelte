@@ -44,7 +44,7 @@
 		},
 		{
 			name: 'Aesthetics Website',
-			desc: 'My Wife is planning on opening an aesthetic medicine clinic.',
+			desc: 'My Wife is planning on opening an aesthetic medicine clinic. Work in Progress.',
 			tech: ['Sveltekit', 'Drizzle ORM', 'Typescript', 'TailwindCSS'],
 			link: 'https://esthetics-git-main-gregdilellas-projects.vercel.app/',
 			gHlink: 'https://github.com/gregdilella/esthetics'

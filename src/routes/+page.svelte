@@ -1,5 +1,5 @@
 <script lang="ts">
-	import me from '$lib/assets/me.jpg?enhanced';
+	import me from '$lib/assets/me.png?enhanced';
 	import Timeline from '$lib/components/Timeline.svelte';
 
 
@@ -67,7 +67,7 @@
 			src={me}
 			alt="me:)"
 			loading="lazy"
-			class="max-w-xs md:max-w-sm border-2 border-base-300 rounded-2xl duration-200 hover:shadow-lg shadow-sm animate-in fade-in blur-in delay-200 mx-auto"
+			class="max-w-xs md:max-w-sm border-2 border-base-300 rounded-2xl animate-in fade-in slide-in-from-left-12 blur-in duration-700 mx-auto"
 		/>
 	</div>
 </section>
@@ -112,11 +112,12 @@
 			Stack:
 		  </h1>
 		  <ul class="text-md text-lg font-bold md:text-xl space-y-1">
-			<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
-			<li><a href="https://tailwindcss.com" target="_blank">Tailwind</a></li>
-			<li><a href="https://orm.drizzle.team" target="_blank">Drizzle</a></li>
 			<li><a href="https://python.org" target="_blank">Python</a></li>
 			<li><a href="https://pandas.pydata.org" target="_blank">Pandas</a></li>
+			<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
+			<li><a href="https://tailwindcss.com" target="_blank">Tailwindcss</a></li>
+			<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
+
 			<li><a href="https://www.tableau.com/" target="_blank">Tableau</a></li>
 		  </ul>
 		</div>

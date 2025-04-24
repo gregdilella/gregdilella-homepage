@@ -1,61 +1,41 @@
-// import { fail, superValidate } from 'sveltekit-superforms';
-// import { zod } from 'sveltekit-superforms/adapters';
-// import { z } from 'zod';
-// import { db } from '$lib/server/db/index.js';
-// import { contactForm } from '$lib/server/db/schema.js';
-// import { message } from 'sveltekit-superforms';
+// src/routes/contact/+page.server.ts
+import { fail, redirect } from '@sveltejs/kit';
+import { db } from '$lib/server/db';
+import { contactForm2 } from '$lib/server/db/schema';
+import { z } from 'zod';
 
-// // Define the Zod schema
-// const schema = z.object({
-// 	firstname: z.string(),
-// 	lastname: z.string(),
-// 	email: z.string().email(),
-// 	phonenumber: z
-// 		.string()
-// 		.regex(/^(\+\d{1,3}[- ]?)?\d{10}$/, { message: 'Invalid phone number format' }),
-// 	message: z.string().min(4, { message: 'Message cannot be empty.' }),
-// });
+export const actions = {
+	default: async ({ request }) => {
+		const data = Object.fromEntries(await request.formData());
 
-// export const load = async () => {
-// 	// Initialize the form validation with the schema
-// 	const form = await superValidate(zod(schema));
-// 	return { form };
-// };
+		const schema = z.object({
+			name: z.string().min(1),
+			email: z.string().email(),
+			message: z.string().min(1)
+		});
 
-// export const actions = {
-// 	default: async ({ request }) => {
-// 		// Validate the incoming request with the schema
-// 		const form = await superValidate(request, zod(schema));
+		const result = schema.safeParse(data);
 
-// 		// If validation fails, return the form with errors
-// 		if (!form.valid) {
-// 			return fail(400, { form });
-// 		}
+		if (!result.success) {
+			return fail(400, { error: 'Invalid form input', issues: result.error.flatten() });
+		}
 
-// 		try {
-// 			// Insert the validated form data into the database
-// 			await db.insert(contactForm).values({
-// 				id: crypto.randomUUID(), // Generate a unique ID
-// 				firstName: form.data.firstname,
-// 				lastName: form.data.lastname,
-// 				email: form.data.email,
-// 				phoneNumber: form.data.phonenumber,
-// 				message: form.data.message,
-// 			});
+		try {
+			await db.insert(contactForm2).values({
+				id: crypto.randomUUID(),
+				name: result.data.name,
+				email: result.data.email,
+				message: result.data.message
+			});
 
-// 			// Return a success message
-// 			return message(
-// 				form,
-// 				'Thank you! Your form has been submitted successfully. We will get back to you shortly!'
-// 			);
-// 		} catch (error) {
-// 			console.error('Database error:', error);
+			// redirect to homepage after successful submission
+			throw redirect(303, '/');
+		} catch (error) {
+			console.error('Database error:', error);
 
-// 			// Handle database errors gracefully
-// 			return fail(500, {
-// 				form,
-// 				error: 'An error occurred while saving the form data. Please try again later.',
-// 			});
-// 		}
-// 	},
-// };
+			return fail(500, {
+				error: 'An error occurred while saving the form data. Please try again later.'
+			});
+		}
+	}
+};
