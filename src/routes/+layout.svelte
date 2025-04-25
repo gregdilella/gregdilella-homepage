@@ -24,8 +24,8 @@
 	{#if $drawerStore.id === 'nav'}
 		<div class="flex justify-center gap-8 p-4 text-2xl">
 			<a on:click={() => drawerStore.close()} href="/"><i class="fa-solid fa-house"></i></a>
-			<a on:click={() => drawerStore.close()} href="/Projects"><i class="fa-solid fa-suitcase"></i></a>
-			<a on:click={() => drawerStore.close()} href="/Contact"
+			<a on:click={() => drawerStore.close()} href="/projects"><i class="fa-solid fa-suitcase"></i></a>
+			<a on:click={() => drawerStore.close()} href="/contact"
 				><i class="fa-solid fa-address-book"></i></a
 			>
 		</div>

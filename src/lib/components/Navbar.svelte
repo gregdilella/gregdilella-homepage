@@ -10,9 +10,9 @@
 	let value: number = 0; // Activating the different elements in the Nav
 	$: if ($page.url.pathname === '/') {
 		value = 0;
-	} else if ($page.url.pathname === '/Projects') {
+	} else if ($page.url.pathname === '/projects') {
 		value = 1;
-	} else if ($page.url.pathname === '/Contact') {
+	} else if ($page.url.pathname === '/contact') {
 		value = 2;
 	}
 
@@ -44,20 +44,20 @@
 			<i class="fa-solid fa-house m-auto"></i>
 		</RadioItem>
 	</a>
-	<a href="/Projects" class="flex justify-center">
+	<a href="/projects" class="flex justify-center">
 		<RadioItem
 			bind:group={value}
-			name="Projects"
+			name="projects"
 			value={1}
 			class="my-auto flex aspect-square justify-center rounded-full text-xl"
 		>
 			<i class="fa-solid fa-suitcase m-auto"></i>
 		</RadioItem>
 	</a>
-	<a href="/Contact" class="flex justify-center">
+	<a href="/contact" class="flex justify-center">
 		<RadioItem
 			bind:group={value}
-			name="Contact"
+			name="contact"
 			value={2}
 			class="my-auto flex aspect-square justify-center rounded-full text-xl"
 		>

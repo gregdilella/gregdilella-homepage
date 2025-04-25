@@ -22,14 +22,14 @@
 			gHlink: 'https://github.com/gregdilella/Billing'
 		},
 		{
-			name: 'Accrual Inferal',
+			name: 'Accrual Inference',
 			desc: 'An App to infer vendor cost accrual.',
 			tech: ['Python', 'Tableau Cloud', 'Pandas'],
 			link: null,
 			gHlink: 'https://github.com/gregdilella/accrualproject'
 		},
 		{
-			name: 'Voucher and Dispute',
+			name: 'Auto-Voucher and Dispute',
 			desc: 'An App to Compare Vendor Actuals with Accruals and Voucher the Matching Line Items. A Line Item Will Also Flag If Profit/Loss Falls Outside Tolereance.  ',
 			tech: ['Python', 'Tableau Cloud', 'Pandas'],
 			link: null,

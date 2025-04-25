@@ -12,12 +12,12 @@
 		<form method="POST" action="" class="space-y-4 max-w-md mx-auto mt-10 text-left">
 			<div>
 				<label for="name" class="block mb-1 font-semibold">Name</label>
-				<input id="name" name="name" type="text" class="w-full p-2 border rounded" required />
+				<input id="name" name="name" type="text" class="w-full p-2 border rounded text-black" required />
 			</div>
 		
 			<div>
 				<label for="email" class="block mb-1 font-semibold">Email</label>
-				<input id="email" name="email" type="email" class="w-full p-2 border rounded" required />
+				<input id="email" name="email" type="email" class="w-full p-2 border rounded text-black" required />
 			</div>
 		
 			<div>

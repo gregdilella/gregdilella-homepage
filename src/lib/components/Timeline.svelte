@@ -10,7 +10,7 @@
 		buttonTextCancel: "No, I'd rather stay here",
 		response: (e) => {
 			if (e) {
-				goto('/Projects');
+				goto('/projects');
 			}
 		}
 	};

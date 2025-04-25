@@ -29,7 +29,7 @@
 <!-- Hero Section -->
 <section class="flex justify-center items-start pt-5 py-10 md:pt-20">
 	<div class="flex flex-col items-center">
-		<h1 class="text-8xl md:text-10xl font-black mb-4 animate-in fade-in slide-in-from-left-12 blur-in duration-700">
+		<h1 class="text-8xl md:text-10xl font-black mb-4 animate-in fade-in slide-in-from-left-12 blur-in duration-700 text-center">
 			Greg DiLella
 		</h1>
 
@@ -56,7 +56,7 @@
 	<div class="mx-auto max-w-6xl px-6 md:grid md:grid-cols-2 md:gap-8 items-center">
 		<div>
 			<h1 class="text-4xl font-black mb-4">About me</h1>
-			<p class="text-lg leading-relaxed text-balance">
+			<p class="text-lg leading-relaxed text-balance pb-8">
 				Hey, I'm Greg DiLella — a Full Stack Engineer and Analyst from Canada with a passion for programming,
 				finance, and all things tech. When I'm not coding, you'll find me on the Jiu Jitsu mats, playing hockey,
 				or walking the dogs with my wife.
@@ -89,11 +89,11 @@
 	<div class="bento-box col-span-2 flex flex-col">
 	  <div class="m-auto text-left">
 		<h1
-		  class="bento-heading bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-4xl text-transparent md:text-6xl"
+		  class="bento-heading text-center bg-gradient-to-bl from-primary-500 to-secondary-500 bg-clip-text text-4xl text-transparent md:text-6xl"
 		>
 		  Why me?
 		</h1>
-		<ul class="list-inside text-lg font-semibold md:text-xl space-y-1">
+		<ul class="list-disc list-inside text-lg font-semibold md:text-xl space-y-1">
 		  <li>Most Developers Don't Do Finance and Accounting</li>
 		  <li>Most Finance People Can't Code</li>
 		  <li>Web Dev and Front End Capable</li>
