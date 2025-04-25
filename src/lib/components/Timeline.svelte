@@ -37,7 +37,7 @@
 	</Step>
 	<Step>
 		<svelte:fragment slot="header">2021</svelte:fragment>
-		Created an App to Interact with Comany Backend to Automate the Cost Input / Invoice Processing Department. 20 FTEs. 
+		Created an App to Interact with Company Backend to Automate the Cost Input / Invoice Processing Department. 20 FTEs. 
 	</Step>
 	<Step>
 		<svelte:fragment slot="header">2023</svelte:fragment>
