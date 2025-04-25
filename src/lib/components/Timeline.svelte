@@ -25,7 +25,7 @@
 >
 	<Step>
 		<svelte:fragment slot="header">2011</svelte:fragment>
-		Graduated With a Degree in Electrical and Computer Engenieering.
+		Graduated With a Degree in Electrical and Computer Engineering.
 	</Step>
 	<Step>
 		<svelte:fragment slot="header">2018</svelte:fragment>
