@@ -25,7 +25,12 @@
 				<textarea id="message" name="message" class="w-full p-2 border rounded text-black" required></textarea>
 			</div>
 		
-			<button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Send</button>
+			<button
+			type="submit"
+			class="bg-gradient-to-bl from-primary-700 to-secondary-700 text-white font-bold text-lg py-2 px-4 rounded border border-white transition-all duration-300 hover:bg-blue-700 hover:bg-none hover:from-transparent hover:to-transparent"
+		  >
+			Send
+		  </button>	
 		</form>
 		<br/>
 		<p>
