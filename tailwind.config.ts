@@ -4,7 +4,9 @@ import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 import { abyss } from './src/abyss';
-import * as tailwindcssAnimate from 'tailwindcss-animate';
+import animate from 'tailwindcss-animate';
+
+
 
 
 export default {
@@ -29,11 +31,11 @@ export default {
 	plugins: [
 		forms,
 		typography,
-		tailwindcssAnimate,
 		skeleton({
 			themes: {
 				custom: [abyss]
 			}
-		})
+		}),
+		animate
 	]
 } satisfies Config;

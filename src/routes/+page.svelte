@@ -67,7 +67,7 @@
 			src={me}
 			alt="me:)"
 			loading="lazy"
-			class="max-w-xs md:max-w-sm border-2 border-base-300 rounded-2xl animate-in fade-in slide-in-from-left-12 blur-in duration-700 mx-auto"
+			class="max-w-xs md:max-w-sm border-2 border-base-300 rounded-2xl fade-in slide-in-from-left-12 animate-blur-in duration-700 mx-auto"
 		/>
 	</div>
 </section>
