@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+
+I prefer all my cli build commands to be done in bun
+

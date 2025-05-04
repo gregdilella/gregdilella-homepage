@@ -82,7 +82,7 @@
 
 		  6 Years
 		</h1>
-		<p class="list-inside text-lg font-semibold md:text-xl space-y-1">Of Developper Experience</p>
+		<p class="list-inside text-lg font-semibold md:text-xl space-y-1">Of Developer Experience</p>
 	  </div>
 	</div>
   
@@ -117,7 +117,7 @@
 			<li><a href="https://kit.svelte.dev" target="_blank">SvelteKit</a></li>
 			<li><a href="https://tailwindcss.com" target="_blank">Tailwindcss</a></li>
 			<li><a href="https://orm.drizzle.team" target="_blank">Drizzle ORM</a></li>
-
+			<li><a href="https://supabase.com/" target="_blank">Supabase</a></li>
 			<li><a href="https://www.tableau.com/" target="_blank">Tableau</a></li>
 		  </ul>
 		</div>

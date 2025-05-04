@@ -14,6 +14,8 @@
 		value = 1;
 	} else if ($page.url.pathname === '/contact') {
 		value = 2;
+	} else if ($page.url.pathname === '/payment') {
+		value = 3;
 	}
 
 	const drawerStore = getDrawerStore();
@@ -64,11 +66,15 @@
 			<i class="fa-solid fa-address-book m-auto"></i>
 		</RadioItem>
 	</a>
+	<a href="/payment" class="flex justify-center">
+		<RadioItem
+			bind:group={value}
+			name="payment"
+			value={3}
+			class="my-auto flex aspect-square justify-center rounded-full text-xl"
+		>
+			<i class="fa-solid fa-circle-dollar-to-slot m-auto"></i>
+		</RadioItem>
+	</a>
 </RadioGroup>
 
-<button
-	on:click={() => drawerStore.open(navSettings)}
-	class="variant-ghost-surface btn chip fixed left-6 top-6 z-20 flex aspect-square items-center md:hidden"
->
-	<i class="fa-solid fa-bars-staggered text-lg"></i>
-</button>
