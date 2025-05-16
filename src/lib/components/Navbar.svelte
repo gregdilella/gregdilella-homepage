@@ -66,7 +66,7 @@
 			<i class="fa-solid fa-address-book m-auto"></i>
 		</RadioItem>
 	</a>
-	<a href="/payment" class="flex justify-center">
+	<!-- <a href="/payment" class="flex justify-center">
 		<RadioItem
 			bind:group={value}
 			name="payment"
@@ -75,6 +75,6 @@
 		>
 			<i class="fa-solid fa-circle-dollar-to-slot m-auto"></i>
 		</RadioItem>
-	</a>
+	</a> -->
 </RadioGroup>
 
