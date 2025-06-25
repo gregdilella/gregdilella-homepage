@@ -3,6 +3,21 @@
 
 	const projects: TProject[] = [
 		{
+			name: 'Quoting Tool',
+			desc: 'A simple front end website meant to demonstrate the Billing algorithm as a Direct Customer Quoting Tool.',
+			tech: ['Python', 'Pandas', 'Streamlit', 'GoogleMaps'],
+			link: 'https://petersquotingtool.com/',
+			gHlink: 'https://github.com/gregdilella/petersquotingtool'
+		},
+		{
+			name: 'Aesthetics Website',
+			desc: 'My Wife is planning on opening an aesthetic medicine clinic. Work in Progress.',
+			tech: ['Sveltekit', 'Drizzle ORM', 'Typescript', 'TailwindCSS'],
+			link: 'https://www.cachetcache.com',
+			gHlink: 'https://github.com/gregdilella/cachetcache'
+		},
+
+		{
 			name: 'Vendor Invoice To General Ledger',
 			desc: 'An App that scrapes vendor invoices and converts individual costs into general ledger codes using a machine learning algorith and uploading into database.',
 			tech: [
@@ -35,20 +50,7 @@
 			link: null,
 			gHlink: null
 		},
-		{
-			name: 'Quoting Tool',
-			desc: 'A simple front end website meant to demonstrate the Billing algorithm as a Direct Customer Quoting Tool.',
-			tech: ['Python', 'Pandas', 'Streamlit', 'GoogleMaps'],
-			link: 'https://sterlingquoting.streamlit.app/',
-			gHlink: 'https://github.com/gregdilella/Quoting'
-		},
-		{
-			name: 'Aesthetics Website',
-			desc: 'My Wife is planning on opening an aesthetic medicine clinic. Work in Progress.',
-			tech: ['Sveltekit', 'Drizzle ORM', 'Typescript', 'TailwindCSS'],
-			link: 'https://esthetics-git-main-gregdilellas-projects.vercel.app/',
-			gHlink: 'https://github.com/gregdilella/esthetics'
-		}
+
 	];
 </script>
 
