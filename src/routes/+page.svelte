@@ -57,9 +57,7 @@
 		<div>
 			<h1 class="text-4xl font-black mb-4">About me</h1>
 			<p class="text-lg leading-relaxed text-balance pb-8">
-				Hey, I'm Greg DiLella — a Full Stack Engineer and Analyst from Canada with a passion for programming,
-				finance, and all things tech. When I'm not coding, you'll find me on the Jiu Jitsu mats, playing hockey,
-				or walking the dogs with my wife.
+				Full-stack technical generalist with an engineering degree, MBA, and CFA L1. Combines expertise in data science (Python, SQL), backend and frontend web development (TypeScript, SvelteKit, Bun), and financial analysis to build systems that align technical execution with business goals. Experienced in logistics automation, regulatory frameworks (e.g., NERC), and financial modeling. Adept at operating across abstraction layers—from infrastructure and backend systems to business strategy and compliance—bridging code, data, and ROI.
 			</p>
 		</div>
 
@@ -97,7 +95,7 @@
 		  <li>Most Developers Don't Do Finance and Accounting</li>
 		  <li>Most Finance People Can't Code</li>
 		  <li>Web Dev and Front End Capable</li>
-		  <li>A.I. First Mindset</li>
+		  <li>A.I. First Mentality</li>
 		</ul>
 	  </div>
 	</div>
